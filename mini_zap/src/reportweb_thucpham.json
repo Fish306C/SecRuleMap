@@ -1,0 +1,884 @@
+{
+  "start_url": "https://demo-node-blush.vercel.app",
+  "summary": {
+    "scanned": 27
+  },
+  "results": [
+    {
+      "url": "https://demo-node-blush.vercel.app",
+      "status_code": 200,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Encoding": "br",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:39 GMT",
+        "Etag": "W/\"3658-//qx7HprGWYip++6O7OXDS+9JwE\"",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::2p8d6-1757927619074-299e8b573c20",
+        "Transfer-Encoding": "chunked"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "144",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:39 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::qkgng-1757927619585-e4a0eae0f137"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/alluser",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "152",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:39 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::2p8d6-1757927619878-c34770a85422"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/block",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "150",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:40 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::2p8d6-1757927620165-df1145db290b"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/createAccountAdmin",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "163",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:40 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::rqk8h-1757927620461-440090407ace"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/dashboard",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "154",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:40 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::hpwlb-1757927620763-3fc9d783c0a8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/dichvu",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "151",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:41 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::p4h94-1757927621093-e32851bae87f"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/formrequest",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "156",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:41 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::p4h94-1757927621384-2356365a8337"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/logout",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "151",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:41 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::p4h94-1757927621685-bf7e9e3376cf"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/nhomquyen",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "154",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:42 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::dtg65-1757927621978-eaa049ea9b09"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/681f91b7507b0980c99d4d0c",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:42 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::dtg65-1757927622274-5de4f3429318"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/68205bb8506d6a18cf68171c",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:42 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::xz629-1757927622567-69a9c8c9a630"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/682a0d7aaf0e54ecfc9bf004",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:42 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::xz629-1757927622853-9881ac43b4e9"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/682b62dbd286a2785e6b0c5a",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:43 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::xz629-1757927623148-85aed5b2110d"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/68349cba1d80086a7a4958f0",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:43 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::r2c8j-1757927623433-bf70e6ee87dc"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/6841be3241e4f13bf73ad886",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:43 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::p4h94-1757927623731-ec0f52268d74"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/6841ca5bdaec3fde3ec6729f",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:44 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::r2c8j-1757927624024-3e5781ca6f94"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/685953ed9414c7f100cdfbb1",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:44 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::rxds6-1757927624318-fb2fae107670"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/685954199414c7f100cdfbb4",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:44 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::xz629-1757927624614-e9c162977a56"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/685954389414c7f100cdfbb7",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:45 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::4rlzp-1757927624909-1180401182cd"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/6859546d9414c7f100cdfbba",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:45 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::5bncf-1757927625205-2a35d16d00cb"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/685954989414c7f100cdfbbd",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:45 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::5bncf-1757927625508-807bc2930d22"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/685954b59414c7f100cdfbc0",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:45 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::5bncf-1757927625802-ffbc3a12cadb"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/685954dc9414c7f100cdfbc3",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:46 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::5bncf-1757927626093-a024343da69d"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/685955019414c7f100cdfbc6",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:46 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::qkgng-1757927626409-ca90088c8eed"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/products/edit/685955239414c7f100cdfbc9",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "183",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:46 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::xz629-1757927626697-42f087a5565c"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "https://demo-node-blush.vercel.app/admin/sanpham",
+      "status_code": 404,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Content-Length": "152",
+        "Content-Security-Policy": "default-src 'none'",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Mon, 15 Sep 2025 09:13:47 GMT",
+        "Server": "Vercel",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Express",
+        "X-Vercel-Cache": "MISS",
+        "X-Vercel-Id": "hkg1::iad1::xz629-1757927626995-de2a3ab3d920"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    }
+  ]
+}
