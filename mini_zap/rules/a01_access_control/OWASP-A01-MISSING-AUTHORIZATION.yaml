@@ -1,0 +1,11 @@
+ruleId: OWASP-A01-MISSING-AUTHORIZATION
+standard: "OWASP Top 10 2021 - A01: Broken Access Control"
+description: "Ensure the 'Authorization' header is required for protected resources."
+severity: "Critical"
+type: "header_check"
+target:
+  header: "Authorization"
+assertion:
+  condition: "exists"
+rationale: "Without enforcing an 'Authorization' header, attackers may bypass authentication and access protected resources."
+remediation: "Ensure all protected endpoints require and validate the 'Authorization' header (e.g., JWT, OAuth2 tokens)."
