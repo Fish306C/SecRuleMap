@@ -19,6 +19,6 @@ pip install -r requirements.txt
 
 ### 2. Chạy tool
 - Di chuyển vào thư mục src:
-cd src
+cd SecRuleMap
 - Chạy lệnh sau để quét:
-python -m mini_zap --url https://www.fptpray.com/
+
