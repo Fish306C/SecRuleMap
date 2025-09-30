@@ -22,3 +22,4 @@ pip install -r requirements.txt
 cd SecRuleMap
 - Chạy lệnh sau để quét:
 
+python -m src.tool_compliance --url [https://example.com]

@@ -1,8 +1,7 @@
-# src/mini_zap/cli.py
 import argparse
 
 def parse_args():
-    p = argparse.ArgumentParser(prog="mini_zap", description="mini_zap - lightweight web scanner prototype")
+    p = argparse.ArgumentParser(prog="SecRuleMap", description="SecRuleMap - lightweight web scanner prototype")
     p.add_argument("--url", "-u", required=True, help="Start URL (e.g. http://example.com)")
     p.add_argument("--scan-type", "-s", choices=["spider","passive","active","all"], default="all",
                    help="Type of scan to run: spider / passive / active / all")

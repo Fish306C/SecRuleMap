@@ -1,0 +1,13 @@
+ruleId: OWASP-A06-2021-PLUGIN-NEXTGEN-NO-VULNS
+standard: "OWASP Top 10 2021 - A06: Vulnerable and Outdated Components"
+description: "Confirm NextGEN Gallery version has no publicly known Medium or higher vulnerabilities."
+severity: "Medium"
+type: "component_vuln"
+target:
+  component_type: "plugin"
+  name: "nextgen-gallery"
+  version_source: "auto"
+assertion:
+  condition: "no_known_vulns"
+rationale: "Media/gallery plugins often touch file paths and DB queries; vulnerabilities may enable SQLi or LFI."
+remediation: "Update NextGEN Gallery to the latest stable version and re-test gallery pages."
