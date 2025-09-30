@@ -29,3 +29,5 @@ OS-specific
 Project-specific
 
 /examples/docker/data/
+
+report.json
