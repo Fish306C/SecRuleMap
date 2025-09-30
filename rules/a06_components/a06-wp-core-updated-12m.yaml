@@ -1,0 +1,15 @@
+ruleId: OWASP-A06-2021-WP-CORE-UPDATED-12M
+standard: "OWASP Top 10 2021 - A06: Vulnerable and Outdated Components"
+description: "Ensure the WordPress core version in use has been updated within the past 12 months."
+severity: "Medium"
+type: "component_hygiene"
+target:
+  component_type: "core"
+  name: "wordpress"
+  version_source: "auto"
+assertion:
+  condition: "lte"
+  field: "last_updated_days"
+  value: 365
+rationale: "Software that has not been updated for over a year may contain unpatched vulnerabilities and lacks active maintenance."
+remediation: "Update WordPress core to a version that has been released or patched within the last 12 months."

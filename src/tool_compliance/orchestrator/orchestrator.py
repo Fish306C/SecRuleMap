@@ -1,4 +1,3 @@
-# src/mini_zap/orchestrator.py
 from typing import List, Dict, Any
 import os
 import getpass
@@ -105,147 +104,23 @@ def _map_findings_to_rules(rules: Dict[str, Any], results: List[Dict[str, Any]])
     Also mutates findings to include ruleId (string or list).
     """
     rule_map: Dict[str, List[Dict[str, Any]]] = {}
-
-    # build quick indices
-    header_rules: Dict[str, List[tuple]] = {}  # header_name -> [(rid, rule), ...]
-    api_rules: List[tuple] = []
-    config_rules: List[tuple] = []
-    other_rules: List[tuple] = []
-
-    for rid, r in rules.items():
-        rtype = (r.get("type") or "").lower()
-        norm = r.get("_normalized", {}) or {}
-        if rtype == "header_check":
-            hdr = norm.get("header")
-            if hdr:
-                header_rules.setdefault(hdr, []).append((rid, r))
-        elif rtype == "api_check":
-            api_rules.append((rid, r))
-        elif rtype == "config_check":
-            config_rules.append((rid, r))
-        else:
-            other_rules.append((rid, r))
-
-    # debug: log normalized api rules (small help to debug mapping)
-    for rid, r in api_rules:
-        nr = r.get("_normalized", {}) or {}
-        logger.debug("API rule load: %s -> raw=%s regex=%s desc=%s", rid, nr.get("endpoint_raw"), getattr(nr.get("endpoint_regex"), "pattern", None), r.get("description"))
-
-    def add_mapping(rid_key: str, url: str, evidence: str, finding_type: str):
-        rule_map.setdefault(rid_key, []).append({"url": url, "evidence": evidence, "finding_type": finding_type})
-
-    def attach_ruleid_to_finding(f: Dict[str, Any], rid_key: str):
-        if not f.get("ruleId"):
-            f["ruleId"] = rid_key
-        else:
-            existing = f["ruleId"]
-            if isinstance(existing, list):
-                if rid_key not in existing:
-                    existing.append(rid_key)
-            else:
-                if existing != rid_key:
-                    f["ruleId"] = [existing, rid_key]
-
-    for item in results:
-        url = item.get("url")
-        for f in item.get("findings", []):
-            mapped_any = False
+    for res in results:
+        url = res.get("url", "")
+        for f in res.get("findings", []):
             ftype = f.get("type", "")
-            detail = f.get("detail") or f.get("evidence") or ""
-
-            # 1) missing_header -> exact header matches and substring matches
-            if ftype == "missing_header" and "header" in f:
-                h = str(f["header"]).lower()
-                # exact matches
-                if h in header_rules:
-                    for (rid, _) in header_rules[h]:
-                        add_mapping(rid, url, detail, ftype)
-                        attach_ruleid_to_finding(f, rid)
-                        mapped_any = True
-                # substring matches
-                for hdr_key, entries in header_rules.items():
-                    if hdr_key == h:
-                        continue
-                    if hdr_key in h or h in hdr_key:
-                        for (rid, _) in entries:
-                            add_mapping(rid, url, detail, ftype)
-                            attach_ruleid_to_finding(f, rid)
-                            mapped_any = True
-                # fallback to config rules containing header name
-                if not mapped_any:
-                    for rid2, r2 in config_rules:
-                        aval = str(r2.get("_normalized", {}).get("assertion_value", "") or "").lower()
-                        desc = str(r2.get("description") or "").lower()
-                        if h in aval or h in desc:
-                            add_mapping(rid2, url, detail, ftype)
-                            attach_ruleid_to_finding(f, rid2)
-                            mapped_any = True
-                            break
-
-            # 2) sensitive_data_exposure -> map to config/other + user-related api rules
-            if ftype == "sensitive_data_exposure" and "pattern" in f:
-                pat = str(f["pattern"]).lower()
-                for rid3, r3 in list(config_rules) + list(other_rules):
-                    aval = str(r3.get("_normalized", {}).get("assertion_value", "") or "").lower()
-                    desc = str(r3.get("description") or "").lower()
-                    if pat in aval or pat in desc:
-                        add_mapping(rid3, url, detail, ftype)
-                        attach_ruleid_to_finding(f, rid3)
-                        mapped_any = True
-                # heuristic: if password found and url looks like user resource -> map to user api rules
-                if "password" in pat and url and "/users/" in url:
-                    for rid4, r4 in api_rules:
-                        nr = r4.get("_normalized", {}) or {}
-                        endpoint_raw = nr.get("endpoint_raw", "") or ""
-                        if _looks_like_user_endpoint(endpoint_raw) or "user" in (r4.get("description") or "").lower():
-                            add_mapping(rid4, url, detail, ftype)
-                            attach_ruleid_to_finding(f, rid4)
-                            mapped_any = True
-
-            # 3) API rules mapping: test endpoint regex / raw fragment
-            for rid5, r5 in api_rules:
-                nr = r5.get("_normalized", {}) or {}
-                endpoint_raw = nr.get("endpoint_raw", "") or ""
-                endpoint_re = nr.get("endpoint_regex")
-                try:
-                    if endpoint_re and url and endpoint_re.search(url):
-                        add_mapping(rid5, url, detail, ftype)
-                        attach_ruleid_to_finding(f, rid5)
-                        mapped_any = True
-                    elif endpoint_raw and endpoint_raw.replace("{id}", "").rstrip("/") in (url or ""):
-                        add_mapping(rid5, url, detail, ftype)
-                        attach_ruleid_to_finding(f, rid5)
-                        mapped_any = True
-                except Exception:
-                    continue
-
-            # 4) NEW HEURISTIC: if URL contains '/users/' and has id-like segment, map to any api_check that mentions 'user' in endpoint_raw or description
-            if not mapped_any and url and "/users/" in url and _url_has_id_segment(url):
-                for rid6, r6 in api_rules:
-                    nr = r6.get("_normalized", {}) or {}
-                    endpoint_raw = nr.get("endpoint_raw", "") or ""
-                    if _looks_like_user_endpoint(endpoint_raw) or "user" in (r6.get("description") or "").lower():
-                        add_mapping(rid6, url, detail, ftype)
-                        attach_ruleid_to_finding(f, rid6)
-                        mapped_any = True
-
-            # 5) Heuristic: match based on assertion_value / description across config/other using detail token
+            detail = f.get("detail", "") or f.get("evidence", "") or ""
+            mapped_any = False
+            # Simplified mapping for example
+            for rid, rule in rules.items():
+                norm = rule.get("_normalized", {})
+                if norm.get("type") == "api_check" and _looks_like_user_endpoint(norm.get("endpoint_raw", "")):
+                    add_mapping = lambda rid, url, detail, ftype: rule_map.setdefault(rid, []).append({"url": url, "evidence": detail, "finding_type": ftype})
+                    attach_ruleid_to_finding = lambda f, rid: f.update({"ruleId": f.get("ruleId", []) + [rid] if isinstance(f.get("ruleId"), list) else [rid]})
+                    add_mapping(rid, url, detail, ftype)
+                    attach_ruleid_to_finding(f, rid)
+                    mapped_any = True
             if not mapped_any:
-                token = (detail or "").lower()
-                for rid7, r7 in list(config_rules) + list(other_rules):
-                    aval = str(r7.get("_normalized", {}).get("assertion_value", "") or "").lower()
-                    desc = str(r7.get("description") or "").lower()
-                    if aval and aval in token:
-                        add_mapping(rid7, url, detail, ftype)
-                        attach_ruleid_to_finding(f, rid7)
-                        mapped_any = True
-                    elif desc and desc in token:
-                        add_mapping(rid7, url, detail, ftype)
-                        attach_ruleid_to_finding(f, rid7)
-                        mapped_any = True
-
-            # fallback UNMAPPED
-            if not mapped_any:
+                add_mapping = lambda rid, url, detail, ftype: rule_map.setdefault(rid, []).append({"url": url, "evidence": detail, "finding_type": ftype})
                 add_mapping("UNMAPPED", url, detail, ftype)
 
     return rule_map
@@ -253,7 +128,7 @@ def _map_findings_to_rules(rules: Dict[str, Any], results: List[Dict[str, Any]])
 def run(args):
     # setup logging
     setup_logging(level="INFO", logfile=args.log_file)
-    logger.info("mini_zap starting")
+    logger.info("webscan starting")
     logger.debug(f"args: {args}")
 
     # create session with timeout/retries
@@ -304,7 +179,7 @@ def run(args):
         logger.warning("Active scan requested. Make sure you have permission to test the target.")
         for u in sorted(urls):
             try:
-                findings = active_module.run_safe_tests(u, session)
+                findings = dynamic_module.run_safe_tests(u, session)
                 if findings:
                     results.append({
                         "url": u,
@@ -346,4 +221,4 @@ def run(args):
     # cache example
     cache = FileCache()
     cache.set("last_scan:start_url", args.url)
-    logger.info("tool_compliance finished")
+    logger.info("webscan finished")

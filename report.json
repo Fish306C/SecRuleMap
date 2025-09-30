@@ -1,0 +1,4933 @@
+{
+  "start_url": "https://www.florisbooks.co.uk/index.php",
+  "summary": {
+    "scanned": 50
+  },
+  "results": [
+    {
+      "url": "https://www.florisbooks.co.uk/authors",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:53:52 GMT",
+        "Server": "Apache",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Pragma": "no-cache",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Last-Modified": "Sat, 27 Sep 2025 06:53:52 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Keep-Alive": "timeout=5, max=20",
+        "Connection": "Keep-Alive",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/basket",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:53:53 GMT",
+        "Server": "Apache",
+        "Set-Cookie": "ordernumber=2509CDA7, headerbasketcount=0; path=/",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:03:53 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "2838",
+        "Keep-Alive": "timeout=5, max=18",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/blog",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:53:54 GMT",
+        "Server": "Apache",
+        "Link": "<https://www.florisbooks.co.uk/blog/wp-json/>; rel=\"https://api.w.org/\"",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Pragma": "no-cache",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Last-Modified": "Sat, 27 Sep 2025 06:53:54 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Keep-Alive": "timeout=5, max=16",
+        "Connection": "Keep-Alive",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:53:55 GMT",
+        "Server": "Apache",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Pragma": "no-cache",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Last-Modified": "Sat, 27 Sep 2025 06:53:55 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "7268",
+        "Keep-Alive": "timeout=5, max=14",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/#Children's",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:53:55 GMT",
+        "Server": "Apache",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Pragma": "no-cache",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Last-Modified": "Sat, 27 Sep 2025 06:53:55 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "7268",
+        "Keep-Alive": "timeout=5, max=13",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509257",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:53:56 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:03:56 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "6561",
+        "Keep-Alive": "timeout=5, max=11",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509264",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:53:57 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:03:57 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "6463",
+        "Keep-Alive": "timeout=5, max=9",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509271",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:53:57 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:03:57 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "5529",
+        "Keep-Alive": "timeout=5, max=7",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509301",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:53:58 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:03:58 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "6968",
+        "Keep-Alive": "timeout=5, max=5",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509325",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:53:59 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:03:59 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "5938",
+        "Keep-Alive": "timeout=5, max=3",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509356",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:00 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:04:00 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "6429",
+        "Keep-Alive": "timeout=5, max=1",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509363",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:01 GMT",
+        "Server": "Apache",
+        "Upgrade": "h2",
+        "Connection": "Upgrade, Keep-Alive",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:04:01 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "5660",
+        "Keep-Alive": "timeout=5, max=100",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509387",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:02 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:04:02 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "7590",
+        "Keep-Alive": "timeout=5, max=98",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509400",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:03 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:04:03 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "6086",
+        "Keep-Alive": "timeout=5, max=96",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509516",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:03 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:04:03 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "5283",
+        "Keep-Alive": "timeout=5, max=94",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509530",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:04 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:04:04 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "6956",
+        "Keep-Alive": "timeout=5, max=92",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509547",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:05 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:04:05 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "5088",
+        "Keep-Alive": "timeout=5, max=90",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509554",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:05 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:04:05 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "5559",
+        "Keep-Alive": "timeout=5, max=88",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509561",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:07 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:04:07 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "5156",
+        "Keep-Alive": "timeout=5, max=86",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509578",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:08 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:04:08 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "5182",
+        "Keep-Alive": "timeout=5, max=84",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509592",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:08 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:04:08 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "5767",
+        "Keep-Alive": "timeout=5, max=82",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509639",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:09 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:04:09 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "5134",
+        "Keep-Alive": "timeout=5, max=80",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/books/9781782509646",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:10 GMT",
+        "Server": "Apache",
+        "Cache-Control": "max-age=600",
+        "Expires": "Sat, 27 Sep 2025 07:04:10 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "6329",
+        "Keep-Alive": "timeout=5, max=78",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "secret",
+          "severity": "medium",
+          "detail": "Found pattern 'secret' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/catalogues",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:11 GMT",
+        "Server": "Apache",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Pragma": "no-cache",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Last-Modified": "Sat, 27 Sep 2025 06:54:11 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "3813",
+        "Keep-Alive": "timeout=5, max=76",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/ebooks",
+      "status_code": 404,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:12 GMT",
+        "Server": "Apache",
+        "Content-Length": "315",
+        "Keep-Alive": "timeout=5, max=75",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=iso-8859-1"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509264.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:12 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Fri, 18 Apr 2025 14:28:21 GMT",
+        "ETag": "\"636c-6330e54938935\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "25452",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:12 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=74",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509271.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:12 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Tue, 17 Sep 2024 14:57:00 GMT",
+        "ETag": "\"b89b-62251e6cbd599\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "47259",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:12 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=73",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509301.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:13 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Fri, 04 Apr 2025 15:44:15 GMT",
+        "ETag": "\"75b2-631f5c2329771\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "30130",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:13 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=72",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509325.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:13 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Tue, 17 Sep 2024 14:57:02 GMT",
+        "ETag": "\"945b-62251e6e950d5\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "37979",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:13 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=71",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509356.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:14 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Tue, 17 Sep 2024 14:57:04 GMT",
+        "ETag": "\"bad6-62251e7083376\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "47830",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:14 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=70",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509363.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:14 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Tue, 17 Sep 2024 14:57:04 GMT",
+        "ETag": "\"e62b-62251e709d95b\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "58923",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:14 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=69",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509387.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:14 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Tue, 17 Sep 2024 14:57:05 GMT",
+        "ETag": "\"c410-62251e71850a8\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "50192",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:14 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=68",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509400.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:15 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Tue, 17 Sep 2024 14:57:06 GMT",
+        "ETag": "\"d7da-62251e72adee2\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "55258",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:15 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=67",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509516.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:15 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Wed, 05 Mar 2025 16:58:54 GMT",
+        "ETag": "\"7a0d-62f9b4df18de3\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "31245",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:15 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=66",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509530.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:16 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Wed, 05 Mar 2025 16:58:54 GMT",
+        "ETag": "\"708c-62f9b4df8a279\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "28812",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:16 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=65",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509547.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:16 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Wed, 05 Mar 2025 16:58:55 GMT",
+        "ETag": "\"7c51-62f9b4dfeebed\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "31825",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:16 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=64",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509554.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:17 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Wed, 05 Mar 2025 16:58:55 GMT",
+        "ETag": "\"741a-62f9b4dff788f\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "29722",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:17 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=63",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509561.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:17 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Wed, 05 Mar 2025 16:58:55 GMT",
+        "ETag": "\"74ee-62f9b4e05c203\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "29934",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:17 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=62",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509578.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:17 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Wed, 05 Mar 2025 16:58:55 GMT",
+        "ETag": "\"6d16-62f9b4e065e45\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "27926",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:17 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=61",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509592.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:18 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Wed, 05 Mar 2025 16:58:56 GMT",
+        "ETag": "\"724d-62f9b4e0d633b\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "29261",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:18 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=60",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509639.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:18 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Wed, 05 Mar 2025 16:58:57 GMT",
+        "ETag": "\"764d-62f9b4e1bda88\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "30285",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:18 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=59",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509646.jpg",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:18 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Fri, 30 May 2025 10:52:34 GMT",
+        "ETag": "\"154ab-636583633e203\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "87211",
+        "Cache-Control": "max-age=2592000",
+        "Expires": "Mon, 27 Oct 2025 06:54:18 GMT",
+        "Vary": "User-Agent",
+        "Keep-Alive": "timeout=5, max=58",
+        "Connection": "Keep-Alive",
+        "Content-Type": "image/jpeg"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/index.php",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:19 GMT",
+        "Server": "Apache",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Pragma": "no-cache",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Last-Modified": "Sat, 27 Sep 2025 06:54:19 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "8784",
+        "Keep-Alive": "timeout=5, max=57",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/permissions",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:20 GMT",
+        "Server": "Apache",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Pragma": "no-cache",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Last-Modified": "Sat, 27 Sep 2025 06:54:20 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "3376",
+        "Keep-Alive": "timeout=5, max=55",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/rights",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:21 GMT",
+        "Server": "Apache",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Pragma": "no-cache",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Last-Modified": "Sat, 27 Sep 2025 06:54:21 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "3006",
+        "Keep-Alive": "timeout=5, max=53",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/shipping",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:21 GMT",
+        "Server": "Apache",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Pragma": "no-cache",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Last-Modified": "Sat, 27 Sep 2025 06:54:21 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "3822",
+        "Keep-Alive": "timeout=5, max=51",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/signup",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:22 GMT",
+        "Server": "Apache",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Pragma": "no-cache",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Last-Modified": "Sat, 27 Sep 2025 06:54:22 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "4230",
+        "Keep-Alive": "timeout=5, max=49",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/signup/forgotten.php",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:22 GMT",
+        "Server": "Apache",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Pragma": "no-cache",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Last-Modified": "Sat, 27 Sep 2025 06:54:22 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "2955",
+        "Keep-Alive": "timeout=5, max=48",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/trade",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:23 GMT",
+        "Server": "Apache",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Pragma": "no-cache",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Last-Modified": "Sat, 27 Sep 2025 06:54:23 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "4355",
+        "Keep-Alive": "timeout=5, max=46",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.florisbooks.co.uk/write",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 27 Sep 2025 06:54:24 GMT",
+        "Server": "Apache",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Pragma": "no-cache",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Last-Modified": "Sat, 27 Sep 2025 06:54:24 GMT",
+        "Vary": "Accept-Encoding,User-Agent",
+        "Content-Encoding": "gzip",
+        "Content-Length": "2926",
+        "Keep-Alive": "timeout=5, max=44",
+        "Connection": "Keep-Alive",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body",
+          "ruleId": [
+            "OWASP-A01-2021-IDOR-API"
+          ]
+        }
+      ]
+    }
+  ],
+  "rule_map": {
+    "OWASP-A01-2021-IDOR-API": [
+      {
+        "url": "https://www.florisbooks.co.uk/authors",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/authors",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/authors",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/authors",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/authors",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/authors",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/basket",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/basket",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/basket",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/basket",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/basket",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/basket",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/blog",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/blog",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/blog",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/blog",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/blog",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/blog",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/#Children's",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/#Children's",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/#Children's",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/#Children's",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/#Children's",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/#Children's",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509257",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509257",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509257",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509257",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509257",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509257",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509264",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509264",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509264",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509264",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509264",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509264",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509271",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509271",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509271",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509271",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509271",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509271",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509301",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509301",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509301",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509301",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509301",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509301",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509325",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509325",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509325",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509325",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509325",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509325",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509356",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509356",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509356",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509356",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509356",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509356",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509363",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509363",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509363",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509363",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509363",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509363",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509387",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509387",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509387",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509387",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509387",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509387",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509400",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509400",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509400",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509400",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509400",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509400",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509516",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509516",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509516",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509516",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509516",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509516",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509530",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509530",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509530",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509530",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509530",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509530",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509547",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509547",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509547",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509547",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509547",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509547",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509554",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509554",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509554",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509554",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509554",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509554",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509561",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509561",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509561",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509561",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509561",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509561",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509578",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509578",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509578",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509578",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509578",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509578",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509592",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509592",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509592",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509592",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509592",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509592",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509639",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509639",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509639",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509639",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509639",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509639",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509646",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509646",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509646",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509646",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509646",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509646",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/books/9781782509646",
+        "evidence": "Found pattern 'secret' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/catalogues",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/catalogues",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/catalogues",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/catalogues",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/catalogues",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/catalogues",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/ebooks",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/ebooks",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/ebooks",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/ebooks",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/ebooks",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509264.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509264.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509264.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509264.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509264.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509271.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509271.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509271.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509271.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509271.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509301.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509301.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509301.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509301.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509301.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509325.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509325.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509325.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509325.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509325.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509356.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509356.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509356.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509356.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509356.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509363.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509363.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509363.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509363.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509363.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509387.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509387.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509387.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509387.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509387.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509400.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509400.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509400.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509400.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509400.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509516.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509516.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509516.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509516.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509516.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509530.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509530.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509530.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509530.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509530.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509547.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509547.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509547.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509547.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509547.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509554.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509554.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509554.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509554.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509554.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509561.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509561.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509561.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509561.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509561.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509578.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509578.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509578.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509578.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509578.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509592.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509592.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509592.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509592.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509592.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509639.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509639.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509639.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509639.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509639.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509646.jpg",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509646.jpg",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509646.jpg",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509646.jpg",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/images/onix-thumb-130/9781782509646.jpg",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/index.php",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/index.php",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/index.php",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/index.php",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/index.php",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/index.php",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/permissions",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/permissions",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/permissions",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/permissions",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/permissions",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/permissions",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/rights",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/rights",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/rights",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/rights",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/rights",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/rights",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/shipping",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/shipping",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/shipping",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/shipping",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/shipping",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/shipping",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/signup",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/signup",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/signup",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/signup",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/signup",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/signup",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/signup/forgotten.php",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/signup/forgotten.php",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/signup/forgotten.php",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/signup/forgotten.php",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/signup/forgotten.php",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/signup/forgotten.php",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/trade",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/trade",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/trade",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/trade",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/trade",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/trade",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/write",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/write",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/write",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/write",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/write",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header"
+      },
+      {
+        "url": "https://www.florisbooks.co.uk/write",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure"
+      }
+    ]
+  }
+}

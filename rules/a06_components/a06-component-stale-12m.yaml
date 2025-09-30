@@ -1,0 +1,13 @@
+ruleId: OWASP-A06-2021-COMPONENT-STALE-12M
+standard: "OWASP Top 10 2021 - A06: Vulnerable and Outdated Components"
+description: "Ensure any WordPress component (core, plugin, theme) has been updated within the last 12 months."
+severity: "Medium"
+type: "component_hygiene"
+target:
+  component_type: "any"
+  version_source: "auto"
+assertion:
+  condition: "lte"
+  value: 365
+rationale: "Inactive components correlate with unpatched vulnerabilities and lack of maintenance."
+remediation: "Update the component to a version released within the last 12 months or replace it with a maintained alternative."
