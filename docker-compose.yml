@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  apache-insecure:
+    image: httpd:2.4
+    container_name: apache-insecure
+    ports:
+      - "18080:80"
+      - "18443:443"
+    volumes:
+      - ./httpd-insecure-full.conf:/usr/local/apache2/conf/httpd.conf:ro
+      - ./apache-ssl:/usr/local/apache2/conf/ssl:ro
+      - ./www/apache_insecure:/usr/local/apache2/htdocs:ro
+      - ./logs:/usr/local/apache2/logs
+
+  nginx-insecure:
+    image: nginx:alpine
+    container_name: nginx-insecure
+    ports:
+      - "28080:80"
+      - "28443:443"
+    volumes:
+      - ./nginx-insecure-full.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx-ssl:/etc/nginx/ssl:ro
+      - ./www/nginx_insecure:/usr/share/nginx/html:ro
+      - ./www/nginx_insecure_tls:/usr/share/nginx/html_tls:ro

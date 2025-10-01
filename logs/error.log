@@ -1,0 +1,437 @@
+[Tue Sep 30 08:09:28.012591 2025] [mime:error] [pid 1:tid 1] (2)No such file or directory: AH01597: could not open mime types config file /etc/mime.types.
+AH00016: Configuration Failed
+[Tue Sep 30 16:18:44.912496 2025] [mime:error] [pid 1:tid 1] (2)No such file or directory: AH01597: could not open mime types config file /etc/mime.types.
+AH00016: Configuration Failed
+[Tue Sep 30 16:21:36.403935 2025] [mime:error] [pid 1:tid 1] (2)No such file or directory: AH01597: could not open mime types config file /etc/mime.types.
+AH00016: Configuration Failed
+[Tue Sep 30 16:26:23.217687 2025] [ssl:info] [pid 1:tid 1] AH01883: Init: Initialized OpenSSL library
+[Tue Sep 30 16:26:23.241474 2025] [ssl:debug] [pid 1:tid 1] ssl_engine_init.c(364): AH01886: OpenSSL has FIPS mode disabled
+[Tue Sep 30 16:26:23.254833 2025] [ssl:info] [pid 1:tid 1] AH01887: Init: Initializing (virtual) servers for SSL
+[Tue Sep 30 16:26:23.282800 2025] [ssl:info] [pid 1:tid 1] AH01876: mod_ssl/2.4.65 compiled against Server: Apache/2.4.65, Library: OpenSSL/3.5.1
+[Tue Sep 30 16:26:23.403033 2025] [ssl:info] [pid 1:tid 1] AH01883: Init: Initialized OpenSSL library
+[Tue Sep 30 16:26:23.405076 2025] [ssl:debug] [pid 1:tid 1] ssl_engine_init.c(364): AH01886: OpenSSL has FIPS mode disabled
+[Tue Sep 30 16:26:23.407276 2025] [ssl:warn] [pid 1:tid 1] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Sep 30 16:26:23.407574 2025] [ssl:info] [pid 1:tid 1] AH01887: Init: Initializing (virtual) servers for SSL
+[Tue Sep 30 16:26:23.408686 2025] [ssl:info] [pid 1:tid 1] AH01876: mod_ssl/2.4.65 compiled against Server: Apache/2.4.65, Library: OpenSSL/3.5.1
+[Tue Sep 30 16:26:23.426499 2025] [mpm_event:debug] [pid 1:tid 1] event.c(751): Child 0 started: pid 8, gen 0, active 1/6, total 1/1/16
+[Tue Sep 30 16:26:23.429637 2025] [proxy:debug] [pid 8:tid 8] proxy_util.c(2256): AH00925: initializing worker http://127.0.0.1:8081/ shared
+[Tue Sep 30 16:26:23.429844 2025] [mpm_event:debug] [pid 1:tid 1] event.c(751): Child 1 started: pid 9, gen 0, active 2/6, total 2/2/16
+[Tue Sep 30 16:26:23.430659 2025] [proxy:debug] [pid 9:tid 9] proxy_util.c(2256): AH00925: initializing worker http://127.0.0.1:8081/ shared
+[Tue Sep 30 16:26:23.430836 2025] [proxy:debug] [pid 8:tid 8] proxy_util.c(2327): AH00927: initializing worker http://127.0.0.1:8081/ local
+[Tue Sep 30 16:26:23.431126 2025] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.65 (Unix) OpenSSL/3.5.1 configured -- resuming normal operations
+[Tue Sep 30 16:26:23.432071 2025] [proxy:debug] [pid 8:tid 8] proxy_util.c(2358): AH00930: initialized pool in child 8 for (127.0.0.1:8081) min=0 max=25 smax=25
+[Tue Sep 30 16:26:23.432615 2025] [mpm_event:info] [pid 1:tid 1] AH00490: Server built: Sep 29 2025 23:54:09
+[Tue Sep 30 16:26:23.434500 2025] [proxy:debug] [pid 9:tid 9] proxy_util.c(2327): AH00927: initializing worker http://127.0.0.1:8081/ local
+[Tue Sep 30 16:26:23.434518 2025] [proxy:debug] [pid 8:tid 8] proxy_util.c(2256): AH00925: initializing worker proxy:reverse shared
+[Tue Sep 30 16:26:23.434856 2025] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Tue Sep 30 16:26:23.435199 2025] [proxy:debug] [pid 9:tid 9] proxy_util.c(2358): AH00930: initialized pool in child 9 for (127.0.0.1:8081) min=0 max=25 smax=25
+[Tue Sep 30 16:26:23.435837 2025] [core:debug] [pid 1:tid 1] log.c(1605): AH02639: Using SO_REUSEPORT: yes (1)
+[Tue Sep 30 16:26:23.436789 2025] [proxy:debug] [pid 8:tid 8] proxy_util.c(2327): AH00927: initializing worker proxy:reverse local
+[Tue Sep 30 16:26:23.436809 2025] [proxy:debug] [pid 9:tid 9] proxy_util.c(2256): AH00925: initializing worker proxy:reverse shared
+[Tue Sep 30 16:26:23.441428 2025] [proxy:debug] [pid 8:tid 8] proxy_util.c(2358): AH00930: initialized pool in child 8 for (*:80) min=0 max=25 smax=25
+[Tue Sep 30 16:26:23.445877 2025] [proxy:debug] [pid 8:tid 8] proxy_util.c(2251): AH00924: worker http://127.0.0.1:8081/ shared already initialized
+[Tue Sep 30 16:26:23.445888 2025] [proxy:debug] [pid 9:tid 9] proxy_util.c(2327): AH00927: initializing worker proxy:reverse local
+[Tue Sep 30 16:26:23.447585 2025] [proxy:debug] [pid 8:tid 8] proxy_util.c(2319): AH00926: worker http://127.0.0.1:8081/ local already initialized
+[Tue Sep 30 16:26:23.448204 2025] [proxy:debug] [pid 9:tid 9] proxy_util.c(2358): AH00930: initialized pool in child 9 for (*:80) min=0 max=25 smax=25
+[Tue Sep 30 16:26:23.448627 2025] [proxy:debug] [pid 8:tid 8] proxy_util.c(2251): AH00924: worker http://127.0.0.1:8081/ shared already initialized
+[Tue Sep 30 16:26:23.448947 2025] [proxy:debug] [pid 9:tid 9] proxy_util.c(2251): AH00924: worker http://127.0.0.1:8081/ shared already initialized
+[Tue Sep 30 16:26:23.449248 2025] [proxy:debug] [pid 8:tid 8] proxy_util.c(2319): AH00926: worker http://127.0.0.1:8081/ local already initialized
+[Tue Sep 30 16:26:23.449511 2025] [proxy:debug] [pid 9:tid 9] proxy_util.c(2319): AH00926: worker http://127.0.0.1:8081/ local already initialized
+[Tue Sep 30 16:26:23.450299 2025] [mpm_event:debug] [pid 8:tid 10] event.c(2475): AH02471: start_threads: Using epoll (wakeable)
+[Tue Sep 30 16:26:23.450693 2025] [proxy:debug] [pid 9:tid 9] proxy_util.c(2251): AH00924: worker http://127.0.0.1:8081/ shared already initialized
+[Tue Sep 30 16:26:23.461096 2025] [proxy:debug] [pid 9:tid 9] proxy_util.c(2319): AH00926: worker http://127.0.0.1:8081/ local already initialized
+[Tue Sep 30 16:26:23.464512 2025] [mpm_event:debug] [pid 9:tid 37] event.c(2475): AH02471: start_threads: Using epoll (wakeable)
+[Tue Sep 30 16:26:33.639177 2025] [core:debug] [pid 8:tid 11] protocol.c(511): NULL bytes in header (66 bytes)
+[Tue Sep 30 16:26:33.639709 2025] [core:debug] [pid 8:tid 12] protocol.c(511): NULL bytes in header (430 bytes)
+[Tue Sep 30 16:26:33.643145 2025] [core:debug] [pid 8:tid 11] protocol.c(511): ...........{.r.. 16030107120100070e03037bc372e6bc
+[Tue Sep 30 16:26:33.647270 2025] [core:debug] [pid 8:tid 12] protocol.c(511): ...........*...` 16030107120100070e03032ab6009c60
+[Tue Sep 30 16:26:33.648258 2025] [core:debug] [pid 8:tid 11] protocol.c(511): 4.n..#.B6.tk..a1 34036e108e239742361a746bd6906131
+[Tue Sep 30 16:26:33.650073 2025] [core:debug] [pid 8:tid 12] protocol.c(511): R...]iC..fG*.V.. 52aefb115d6943f11a66472ac3560fcf
+[Tue Sep 30 16:26:33.650438 2025] [core:debug] [pid 8:tid 11] protocol.c(511): [.....y.~t. ...: 5b05a8d891bf79ed7e74062082e6f73a
+[Tue Sep 30 16:26:33.650736 2025] [core:debug] [pid 8:tid 12] protocol.c(511): h..VL...J.. .1.O 68969c564c83aff34a1fc8205c31d94f
+[Tue Sep 30 16:26:33.651084 2025] [core:debug] [pid 8:tid 11] protocol.c(511): (..q.....f.>.-.- 28fed3719aba9cf7fa665c3e1a2db72d
+[Tue Sep 30 16:26:33.651960 2025] [core:debug] [pid 8:tid 12] protocol.c(511): .CT...%.)....... f94354e8f2ab25fb29d391bd9e8291f7
+[Tue Sep 30 16:26:33.652850 2025] [core:debug] [pid 8:tid 11] protocol.c(511): P.               500a                            
+[Tue Sep 30 16:26:33.653788 2025] [core:debug] [pid 8:tid 12] protocol.c(511): ..=.Pf..W3.q. ** 150c3de95066d9e95733197100202a2a
+[Tue Sep 30 16:26:33.654243 2025] [core:debug] [pid 8:tid 11] protocol.c(1449): [client 172.18.0.1:47208] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:33.654534 2025] [core:debug] [pid 8:tid 12] protocol.c(511): .......+./.,.0.. 130113021303c02bc02fc02cc030cca9
+[Tue Sep 30 16:26:33.658239 2025] [core:debug] [pid 8:tid 12] protocol.c(511): .........../.5.. cca8c013c014009c009d002f00350100
+[Tue Sep 30 16:26:33.663252 2025] [core:debug] [pid 8:tid 12] protocol.c(511): ..jj...+........ 06a56a6a0000002b000706dada030403
+[Tue Sep 30 16:26:33.662444 2025] [core:debug] [pid 8:tid 13] protocol.c(511): NULL bytes in header (120 bytes)
+[Tue Sep 30 16:26:33.664944 2025] [core:debug] [pid 8:tid 12] protocol.c(511): ......3....ZZ... 0300120000003304ef04ed5a5a000100
+[Tue Sep 30 16:26:33.665296 2025] [core:debug] [pid 8:tid 13] protocol.c(511): ...........=.... 16030107120100070e03033decd3eb0f
+[Tue Sep 30 16:26:33.665645 2025] [core:debug] [pid 8:tid 12] protocol.c(511): ..........8..Ql' 11ec04c0bf870f9dc7143817bf516c27
+[Tue Sep 30 16:26:33.665917 2025] [core:debug] [pid 8:tid 13] protocol.c(511): f6W..4_(..@.a..* 6636578bd1345f2807b040dc61c5862a
+[Tue Sep 30 16:26:33.666515 2025] [core:debug] [pid 8:tid 12] protocol.c(511): ..>=.a^.,...'... fff13e3d93615ed22cc7a0c227b8aa19
+[Tue Sep 30 16:26:33.667651 2025] [core:debug] [pid 8:tid 13] protocol.c(511): ?...#'....[ .4!b 3fbf81f12327ff1bd10d5b20ab342162
+[Tue Sep 30 16:26:33.668142 2025] [core:debug] [pid 8:tid 12] protocol.c(511): ._5Q.....yd..7f. ea5f355191fbf98aba7964d2e83766a7
+[Tue Sep 30 16:26:33.668695 2025] [core:debug] [pid 8:tid 13] protocol.c(511): N.p.c.p.....p.;2 4eb8709663dd709c9fc2b5c070f23b32
+[Tue Sep 30 16:26:33.669200 2025] [core:debug] [pid 8:tid 12] protocol.c(511): ;.X...t..7>..... 3b1e589e8bf874c493373eb3cadf8801
+[Tue Sep 30 16:26:33.669565 2025] [core:debug] [pid 8:tid 13] protocol.c(511): ..3...N...x.. .. a0f33307ce1c4e981c1f78b20020caca
+[Tue Sep 30 16:26:33.669934 2025] [core:debug] [pid 8:tid 12] protocol.c(511): ..W.*..t...j-ID. f40657e92ab69c7403f4f46a2d49445c
+[Tue Sep 30 16:26:33.670264 2025] [core:debug] [pid 8:tid 13] protocol.c(511): .......+./.,.0.. 130113021303c02bc02fc02cc030cca9
+[Tue Sep 30 16:26:33.670960 2025] [core:debug] [pid 8:tid 12] protocol.c(511): .....T.z.'>..... d9ae06ca1e54ba7a1b273ec9eace1ec7
+[Tue Sep 30 16:26:33.671628 2025] [core:debug] [pid 8:tid 13] protocol.c(511): .........../.5.. cca8c013c014009c009d002f00350100
+[Tue Sep 30 16:26:33.672139 2025] [core:debug] [pid 8:tid 12] protocol.c(511): v.Jh..$.y...3d.% 768d4a68d30724ac79b6edea3364a625
+[Tue Sep 30 16:26:33.673348 2025] [core:debug] [pid 8:tid 13] protocol.c(511): ........         06a58a8a0000000a                
+[Tue Sep 30 16:26:33.678048 2025] [core:debug] [pid 8:tid 12] protocol.c(511): ...*..1..{....B. aba7c72abc80318c9d7b05141ea442ef
+[Tue Sep 30 16:26:33.679022 2025] [core:debug] [pid 8:tid 13] protocol.c(1449): [client 172.18.0.1:47230] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:33.680009 2025] [core:debug] [pid 8:tid 12] protocol.c(511): .3{.E@Z1c+..2... 14337b8845405a31632b2e103210f3f5
+[Tue Sep 30 16:26:33.685406 2025] [core:debug] [pid 8:tid 12] protocol.c(511): Vm.?..l..8.#o..[ 566d173ff6e36c0bd538a2236fba1b5b
+[Tue Sep 30 16:26:33.690727 2025] [core:debug] [pid 8:tid 12] protocol.c(511): ?Y{......P.2.hW. 3f597bddb192fae7a450a932ba6857f5
+[Tue Sep 30 16:26:33.700711 2025] [core:debug] [pid 8:tid 12] protocol.c(511): .~6...f .Z.L.Y.y 087e368092bb66201c5a9e4c0659ac79
+[Tue Sep 30 16:26:33.720580 2025] [core:debug] [pid 8:tid 12] protocol.c(511): t../..|..b.l...{ 7480862fe9e27c14b262ac6c12b2c97b
+[Tue Sep 30 16:26:33.728256 2025] [core:debug] [pid 8:tid 12] protocol.c(511): .0..X.m......P.. e13086c358cf6d82998a00b9a75096b1
+[Tue Sep 30 16:26:33.729992 2025] [core:debug] [pid 8:tid 12] protocol.c(511): .qd T...@...p... 13716420540ee12e40f8b2fa70b4e2d7
+[Tue Sep 30 16:26:33.730425 2025] [core:debug] [pid 8:tid 12] protocol.c(511): .z.D...^.Q...... b67ae14492b7ca5e08510589ab1c17af
+[Tue Sep 30 16:26:33.730827 2025] [core:debug] [pid 8:tid 12] protocol.c(511): ..q;v...55.$...4 f805713b760382b335351324e08b8c34
+[Tue Sep 30 16:26:33.731851 2025] [core:debug] [pid 8:tid 12] protocol.c(511): ..(.p.`..../..   a01e28ec7018602effe0a42fc70a    
+[Tue Sep 30 16:26:33.732148 2025] [core:debug] [pid 8:tid 12] protocol.c(1449): [client 172.18.0.1:47218] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:33.742124 2025] [core:debug] [pid 9:tid 38] protocol.c(511): NULL bytes in header (396 bytes)
+[Tue Sep 30 16:26:33.745367 2025] [core:debug] [pid 9:tid 38] protocol.c(511): ................ 16030106b2010006ae0303d8cf80efb6
+[Tue Sep 30 16:26:33.745816 2025] [core:debug] [pid 9:tid 38] protocol.c(511): ..c....n....U... eae563b782d3d46ef2cfd58d55109edc
+[Tue Sep 30 16:26:33.751564 2025] [core:debug] [pid 9:tid 38] protocol.c(511): ..i..I...." .... 5cb56904db49ddc78bee2220dcc4b602
+[Tue Sep 30 16:26:33.751964 2025] [core:debug] [pid 9:tid 38] protocol.c(511): ..c(.`..x..IqT.O 85fc6328836007c878a9f4497154e84f
+[Tue Sep 30 16:26:33.753358 2025] [core:debug] [pid 9:tid 38] protocol.c(511): ...^i......o. .. 15b3b65e699ce0b7d5db146f0020dada
+[Tue Sep 30 16:26:33.753910 2025] [core:debug] [pid 9:tid 38] protocol.c(511): .......+./.,.0.. 130113021303c02bc02fc02cc030cca9
+[Tue Sep 30 16:26:33.754278 2025] [core:debug] [pid 9:tid 38] protocol.c(511): .........../.5.. cca8c013c014009c009d002f00350100
+[Tue Sep 30 16:26:33.754783 2025] [core:debug] [pid 9:tid 38] protocol.c(511): .Ezz...+........ 06457a7a0000002b0007069a9a030403
+[Tue Sep 30 16:26:33.755146 2025] [core:debug] [pid 9:tid 38] protocol.c(511): ................ 03000b00020100001200000010000e00
+[Tue Sep 30 16:26:33.755426 2025] [core:debug] [pid 9:tid 38] protocol.c(511): ..h2.http/1.1... 0c02683208687474702f312e31000500
+[Tue Sep 30 16:26:33.756688 2025] [core:debug] [pid 9:tid 38] protocol.c(511): ................ 050100000000001b0003020002001700
+[Tue Sep 30 16:26:33.757144 2025] [core:debug] [pid 9:tid 38] protocol.c(511): ................ 00ff01000100fe0d00ba0000010001b5
+[Tue Sep 30 16:26:33.757612 2025] [core:debug] [pid 9:tid 38] protocol.c(511): . ...>c.Y....D.. 0020b8ae873e63bd59ac9a16e0440cbc
+[Tue Sep 30 16:26:33.761503 2025] [core:debug] [pid 9:tid 38] protocol.c(511): %..?.^|5;...M..w 2599d93f1f5e7c353bf38c954daad477
+[Tue Sep 30 16:26:33.762302 2025] [core:debug] [pid 9:tid 38] protocol.c(511): .S...|xO.H{pC.,. fe530090e57c784f7f487b7043dc2cac
+[Tue Sep 30 16:26:33.762845 2025] [core:debug] [pid 9:tid 38] protocol.c(511): .}4.m3....f.@5.. 077d34806d33ad91d4a766c240351b8d
+[Tue Sep 30 16:26:33.763146 2025] [core:debug] [pid 9:tid 38] protocol.c(511): .7>...&.$.z.R/h. f9373ec2dcc526bd24c97ae0522f68f8
+[Tue Sep 30 16:26:33.763494 2025] [core:debug] [pid 9:tid 38] protocol.c(511): ...U..X.m..J.#.. 86df8955bfe058c66de3e34ace230efc
+[Tue Sep 30 16:26:33.765014 2025] [core:debug] [pid 9:tid 38] protocol.c(511): 9lO...=..Y..<.G. 396c4f88a6f73d81ee59df053c9a47eb
+[Tue Sep 30 16:26:33.766410 2025] [core:debug] [pid 9:tid 38] protocol.c(511): Nmn1.im9dY....|. 4e6d6e31b6696d396459b8cec2d77cce
+[Tue Sep 30 16:26:33.767658 2025] [core:debug] [pid 9:tid 38] protocol.c(511): ....e....r.._.r. a8e6dbc3655ca2adfa7297a95fa672c1
+[Tue Sep 30 16:26:33.768100 2025] [core:debug] [pid 9:tid 38] protocol.c(511): .....r....R..`4. 07a70c84b272b2e6a5cf5206116034c3
+[Tue Sep 30 16:26:33.768617 2025] [core:debug] [pid 9:tid 38] protocol.c(511): mq..$.^N......}. 6d719af7240f5e4eb60016f8afea7d8f
+[Tue Sep 30 16:26:33.769018 2025] [core:debug] [pid 9:tid 38] protocol.c(511): .k...#.......... de6b9515002300000000000e000c0000
+[Tue Sep 30 16:26:33.769953 2025] [core:debug] [pid 9:tid 38] protocol.c(511): .localhost..     096c6f63616c686f7374000a        
+[Tue Sep 30 16:26:33.770463 2025] [core:debug] [pid 9:tid 38] protocol.c(1449): [client 172.18.0.1:47232] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:35.584083 2025] [core:debug] [pid 9:tid 40] protocol.c(511): NULL bytes in header (412 bytes)
+[Tue Sep 30 16:26:35.585275 2025] [core:debug] [pid 8:tid 14] protocol.c(511): NULL bytes in header (25 bytes)
+[Tue Sep 30 16:26:35.590990 2025] [core:debug] [pid 9:tid 40] protocol.c(511): ............t.0. 16030106f2010006ee0303b274a730f5
+[Tue Sep 30 16:26:35.612839 2025] [core:debug] [pid 8:tid 14] protocol.c(511): .............=&. 16030106b2010006ae030301893d26ca
+[Tue Sep 30 16:26:35.618796 2025] [core:debug] [pid 8:tid 14] protocol.c(511): U.9.Z..K.        558c39145ae5d94b0a              
+[Tue Sep 30 16:26:35.615144 2025] [core:debug] [pid 9:tid 40] protocol.c(511): 0...w.j..D.*.... 3001e5cc77f96a888644bf2abf9df1b3
+[Tue Sep 30 16:26:35.619577 2025] [core:debug] [pid 8:tid 14] protocol.c(1449): [client 172.18.0.1:47252] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:35.620047 2025] [core:debug] [pid 9:tid 40] protocol.c(511): i.......Ev. ..A. 69bae1a291991b884576df20a11f41e3
+[Tue Sep 30 16:26:35.629647 2025] [core:debug] [pid 9:tid 40] protocol.c(511): .....=.QJk.3.... bce701a4c13dce514a6bd93317ad03a0
+[Tue Sep 30 16:26:35.629558 2025] [core:debug] [pid 8:tid 15] protocol.c(511): NULL bytes in header (172 bytes)
+[Tue Sep 30 16:26:35.631249 2025] [core:debug] [pid 9:tid 40] protocol.c(511): .8~...d.u.5.. .. a9387e051f02649075e435bf0020fafa
+[Tue Sep 30 16:26:35.631877 2025] [core:debug] [pid 8:tid 15] protocol.c(511): .............%.. 16030106b2010006ae03030b0325a2ab
+[Tue Sep 30 16:26:35.632280 2025] [core:debug] [pid 9:tid 40] protocol.c(511): .......+./.,.0.. 130113021303c02bc02fc02cc030cca9
+[Tue Sep 30 16:26:35.632586 2025] [core:debug] [pid 8:tid 15] protocol.c(511): .G3w*....];d..j. 014733772a8dfcf0f55d3b64ff9e6a98
+[Tue Sep 30 16:26:35.633358 2025] [core:debug] [pid 9:tid 40] protocol.c(511): .........../.5.. cca8c013c014009c009d002f00350100
+[Tue Sep 30 16:26:35.633653 2025] [core:debug] [pid 8:tid 15] protocol.c(511): (.J%....... A.;. 28914a251388e2bf8403dd2041c43bde
+[Tue Sep 30 16:26:35.635536 2025] [core:debug] [pid 9:tid 40] protocol.c(511): ..JJ...#........ 06854a4a000000230000001200000000
+[Tue Sep 30 16:26:35.636311 2025] [core:debug] [pid 8:tid 15] protocol.c(511): E...y....fN).X.. 45ab81f1798ac18202664e298e585cd2
+[Tue Sep 30 16:26:35.636867 2025] [core:debug] [pid 9:tid 40] protocol.c(511): .......localhost 000e000c0000096c6f63616c686f7374
+[Tue Sep 30 16:26:35.637166 2025] [core:debug] [pid 8:tid 15] protocol.c(511): .C4wJ...8.M.. zz 0e4334774ac8c0bc38d44dab00207a7a
+[Tue Sep 30 16:26:35.637565 2025] [core:debug] [pid 9:tid 40] protocol.c(511): ......-......... ff01000100002d00020101001b000302
+[Tue Sep 30 16:26:35.637877 2025] [core:debug] [pid 8:tid 15] protocol.c(511): .......+./.,.0.. 130113021303c02bc02fc02cc030cca9
+[Tue Sep 30 16:26:35.638294 2025] [core:debug] [pid 9:tid 40] protocol.c(511): .........h2.http 00020010000e000c0268320868747470
+[Tue Sep 30 16:26:35.638649 2025] [core:debug] [pid 8:tid 15] protocol.c(511): .........../.5.. cca8c013c014009c009d002f00350100
+[Tue Sep 30 16:26:35.639065 2025] [core:debug] [pid 9:tid 40] protocol.c(511): /1.1.........~.  2f312e31fe0d00fa00000100017e0020
+[Tue Sep 30 16:26:35.639479 2025] [core:debug] [pid 8:tid 15] protocol.c(511): .E.....3........ 0645eaea0000003304ef04edbaba0001
+[Tue Sep 30 16:26:35.639934 2025] [core:debug] [pid 9:tid 40] protocol.c(511): .~&.2..D.v...nT. d77e260532b616449f76b60cc76e5402
+[Tue Sep 30 16:26:35.640874 2025] [core:debug] [pid 8:tid 15] protocol.c(511): .....G.Q.1t...d. 0011ec04c047fc51d43174ce88a564a2
+[Tue Sep 30 16:26:35.643204 2025] [core:debug] [pid 9:tid 40] protocol.c(511): .....f2......DE. 1bd2f90b5c663216ddf7a2a90b44451c
+[Tue Sep 30 16:26:35.643640 2025] [core:debug] [pid 8:tid 15] protocol.c(511): ..D..UU>.V.7;.eB b1e5449b1e55553ea05688373bbc6542
+[Tue Sep 30 16:26:35.645867 2025] [core:debug] [pid 9:tid 40] protocol.c(511): ..t.'......:k.oy 00d074e4271cc65cbfa18b3a6bea6f79
+[Tue Sep 30 16:26:35.646676 2025] [core:debug] [pid 8:tid 15] protocol.c(511): .....(......     88049ef38628c4fc8daccb0a        
+[Tue Sep 30 16:26:35.647875 2025] [core:debug] [pid 9:tid 40] protocol.c(511): m.C......@...... 6d2e43ccd7b9d006c240a7a7a5c2dcae
+[Tue Sep 30 16:26:35.648248 2025] [core:debug] [pid 8:tid 15] protocol.c(1449): [client 172.18.0.1:47254] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:35.648550 2025] [core:debug] [pid 9:tid 40] protocol.c(511): K.D.....J..%.... 4b0e44ccf6d1afdd4ac1ee2587bb94ac
+[Tue Sep 30 16:26:35.650760 2025] [core:debug] [pid 9:tid 40] protocol.c(511): <...YaI........n 3c2e128d5961498506cd97d9ad91ab6e
+[Tue Sep 30 16:26:35.653295 2025] [core:debug] [pid 9:tid 40] protocol.c(511): ...o..KA....N..F f3821d6ff0dc4b419fd41eb64eecec46
+[Tue Sep 30 16:26:35.672132 2025] [core:debug] [pid 9:tid 40] protocol.c(511): W......Jm....... 57f8028b098d894a6d19fd9e870280c4
+[Tue Sep 30 16:26:35.688195 2025] [core:debug] [pid 9:tid 40] protocol.c(511): v<.N..q[..W.1... 763c824eafc4715bf3a457e5318fdee5
+[Tue Sep 30 16:26:35.692515 2025] [core:debug] [pid 9:tid 40] protocol.c(511): .~.+...R...R4$.] 157eea2bebdf5c52dadfe7523424f65d
+[Tue Sep 30 16:26:35.693932 2025] [core:debug] [pid 9:tid 40] protocol.c(511): .).....G......SS ac29a9808814bb47f4bbecfaefc25353
+[Tue Sep 30 16:26:35.696008 2025] [core:debug] [pid 9:tid 40] protocol.c(511): ....4.8...u..... 83d6d9c9341e38b7e1037584841baebb
+[Tue Sep 30 16:26:35.697507 2025] [core:debug] [pid 9:tid 40] protocol.c(511): ..WE!.v.N.E]...b fdb1574521c3767f4eea455d9b01ac62
+[Tue Sep 30 16:26:35.698367 2025] [core:debug] [pid 9:tid 40] protocol.c(511): {A.M.S..9...     7b41154ddb53f3cf39d2870a        
+[Tue Sep 30 16:26:35.699194 2025] [core:debug] [pid 9:tid 40] protocol.c(1449): [client 172.18.0.1:47238] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:35.707617 2025] [core:debug] [pid 9:tid 41] protocol.c(511): NULL bytes in header (115 bytes)
+[Tue Sep 30 16:26:35.711715 2025] [core:debug] [pid 9:tid 41] protocol.c(511): ...........s...` 16030106f2010006ee03037390108260
+[Tue Sep 30 16:26:35.712592 2025] [core:debug] [pid 9:tid 41] protocol.c(511): !..?.........e58 21f38c3f8ecff304da88e8d8f4653538
+[Tue Sep 30 16:26:35.714652 2025] [core:debug] [pid 9:tid 41] protocol.c(511): ..!J..9V..n .Ks; a9fc214a01a43956b6906e20914b733b
+[Tue Sep 30 16:26:35.715343 2025] [core:debug] [pid 9:tid 41] protocol.c(511): ..t..S.@l.G.^}9J 5cb47417e653ec406cd247c85e7d394a
+[Tue Sep 30 16:26:35.715614 2025] [core:debug] [pid 9:tid 41] protocol.c(511): .K^..-U_..... ** c84b5edbff2d555fcbe180f500202a2a
+[Tue Sep 30 16:26:35.715916 2025] [core:debug] [pid 9:tid 41] protocol.c(511): .......+./.,.0.. 130113021303c02bc02fc02cc030cca9
+[Tue Sep 30 16:26:35.716190 2025] [core:debug] [pid 9:tid 41] protocol.c(511): .........../.5.. cca8c013c014009c009d002f00350100
+[Tue Sep 30 16:26:35.716669 2025] [core:debug] [pid 9:tid 41] protocol.c(511): ...              06850a                          
+[Tue Sep 30 16:26:35.717066 2025] [core:debug] [pid 9:tid 41] protocol.c(1449): [client 172.18.0.1:47262] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:37.590669 2025] [core:debug] [pid 9:tid 44] protocol.c(511): NULL bytes in header (205 bytes)
+[Tue Sep 30 16:26:37.601195 2025] [core:debug] [pid 9:tid 45] protocol.c(511): NULL bytes in header (165 bytes)
+[Tue Sep 30 16:26:37.601498 2025] [core:debug] [pid 9:tid 44] protocol.c(511): ..............+v 16030106d2010006ce03039a07b62b76
+[Tue Sep 30 16:26:37.605562 2025] [core:debug] [pid 9:tid 45] protocol.c(511): ............i.}. 16030106f2010006ee0303dc69ab7dd9
+[Tue Sep 30 16:26:37.606130 2025] [core:debug] [pid 9:tid 44] protocol.c(511): u.~f......5..J.. 75ef7e661b0fe7fe1cc435ecbe4ab0d2
+[Tue Sep 30 16:26:37.607056 2025] [core:debug] [pid 9:tid 45] protocol.c(511): .)z..G.I.r.r.M.3 d0297af3d747b149a972cb72804dce33
+[Tue Sep 30 16:26:37.613286 2025] [core:debug] [pid 9:tid 45] protocol.c(511): .......&J5l R.e. 83e3ff9885de0c264a356c20529f65b3
+[Tue Sep 30 16:26:37.612476 2025] [core:debug] [pid 9:tid 44] protocol.c(511): .M......5.= k$.. 174db1f0dbf707c235b93d206b24b398
+[Tue Sep 30 16:26:37.614293 2025] [core:debug] [pid 9:tid 45] protocol.c(511): ........!...O..< 9ef6e7da8ca5d8ca210feef94fd7ad3c
+[Tue Sep 30 16:26:37.614993 2025] [core:debug] [pid 9:tid 44] protocol.c(511): .....LT.$....".E 9519c7dee14c54a524ba12a6d322a045
+[Tue Sep 30 16:26:37.615370 2025] [core:debug] [pid 9:tid 45] protocol.c(511): ..).@.{..K... .. b3eb299240bf7b1c914baa170020dada
+[Tue Sep 30 16:26:37.615874 2025] [core:debug] [pid 9:tid 44] protocol.c(511): ...sJ4..". .. :: 1b0297734a34dcf422c1208700203a3a
+[Tue Sep 30 16:26:37.616207 2025] [core:debug] [pid 9:tid 45] protocol.c(511): .......+./.,.0.. 130113021303c02bc02fc02cc030cca9
+[Tue Sep 30 16:26:37.616629 2025] [core:debug] [pid 9:tid 44] protocol.c(511): .......+./.,.0.. 130113021303c02bc02fc02cc030cca9
+[Tue Sep 30 16:26:37.617052 2025] [core:debug] [pid 9:tid 45] protocol.c(511): .........../.5.. cca8c013c014009c009d002f00350100
+[Tue Sep 30 16:26:37.617317 2025] [core:debug] [pid 9:tid 44] protocol.c(511): .........../.5.. cca8c013c014009c009d002f00350100
+[Tue Sep 30 16:26:37.617644 2025] [core:debug] [pid 9:tid 45] protocol.c(511): ...............# 0685aaaa000000170000001200000023
+[Tue Sep 30 16:26:37.618343 2025] [core:debug] [pid 9:tid 44] protocol.c(511): .eZZ...........v 06655a5a0000fe0d00da000001000176
+[Tue Sep 30 16:26:37.618686 2025] [core:debug] [pid 9:tid 45] protocol.c(511): ................ 0000000500050100000000000b000201
+[Tue Sep 30 16:26:37.618963 2025] [core:debug] [pid 9:tid 44] protocol.c(511): . ..a/d..B...... 0020ee9d612f640510421403bcf40e7f
+[Tue Sep 30 16:26:37.619397 2025] [core:debug] [pid 9:tid 45] protocol.c(511): ........h2.http/ 000010000e000c02683208687474702f
+[Tue Sep 30 16:26:37.619660 2025] [core:debug] [pid 9:tid 44] protocol.c(511): .>]..F.On.:..O.. 0f3e5df8b946c74f6ed13a8ae94f05c8
+[Tue Sep 30 16:26:37.621174 2025] [core:debug] [pid 9:tid 44] protocol.c(511): X....5c..~J.2.A. 580300b098356390907e4ad932b1419f
+[Tue Sep 30 16:26:37.620473 2025] [core:debug] [pid 9:tid 45] protocol.c(511): 1.1..            312e31000a                      
+[Tue Sep 30 16:26:37.621978 2025] [core:debug] [pid 9:tid 44] protocol.c(511): T.vj73..g..xum.. 54b4766a3733f7d967f39c78756dc8e0
+[Tue Sep 30 16:26:37.622505 2025] [core:debug] [pid 9:tid 45] protocol.c(1449): [client 172.18.0.1:47266] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:37.623000 2025] [core:debug] [pid 9:tid 44] protocol.c(511): 8..v.Qm.J..`.    38c2b376a1516db64abfd6600a      
+[Tue Sep 30 16:26:37.630501 2025] [core:debug] [pid 9:tid 44] protocol.c(1449): [client 172.18.0.1:47264] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:37.633721 2025] [core:debug] [pid 9:tid 47] protocol.c(511): NULL bytes in header (62 bytes)
+[Tue Sep 30 16:26:37.650302 2025] [core:debug] [pid 9:tid 47] protocol.c(511): ............o..h 16030106b2010006ae03032e6fc68268
+[Tue Sep 30 16:26:37.651816 2025] [core:debug] [pid 9:tid 46] protocol.c(511): NULL bytes in header (24 bytes)
+[Tue Sep 30 16:26:37.652338 2025] [core:debug] [pid 9:tid 47] protocol.c(511): A...M...{..I...# 41b81dab4d84a9d77b90a8499589db23
+[Tue Sep 30 16:26:37.652700 2025] [core:debug] [pid 9:tid 46] protocol.c(511): ............LU.. 16030106d2010006ce0303ed4c551f08
+[Tue Sep 30 16:26:37.653029 2025] [core:debug] [pid 9:tid 47] protocol.c(511): ...~DHQ.;8. 63.. d2ea977e4448511f3b3897203633a004
+[Tue Sep 30 16:26:37.653698 2025] [core:debug] [pid 9:tid 46] protocol.c(511): ....@.Y.         ed13d3fe4011590a                
+[Tue Sep 30 16:26:37.655449 2025] [core:debug] [pid 9:tid 47] protocol.c(511): ..g"}......%..   ef1d67227dcc0904f7b99225b30a    
+[Tue Sep 30 16:26:37.656032 2025] [core:debug] [pid 9:tid 46] protocol.c(1449): [client 172.18.0.1:47282] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:37.656375 2025] [core:debug] [pid 9:tid 47] protocol.c(1449): [client 172.18.0.1:47276] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:38.504732 2025] [core:debug] [pid 9:tid 48] protocol.c(511): NULL bytes in header (292 bytes)
+[Tue Sep 30 16:26:38.528193 2025] [core:debug] [pid 9:tid 48] protocol.c(511): ............o.i. 16030106f2010006ee0303d86f2e690e
+[Tue Sep 30 16:26:38.544328 2025] [core:debug] [pid 9:tid 48] protocol.c(511): YP...8....q..... 5950d39a1d38aa92d5b071ce181ab316
+[Tue Sep 30 16:26:38.559737 2025] [core:debug] [pid 9:tid 48] protocol.c(511): .H.......KL ..3. a648c6f3d2d3caf25c4b4c207f0c33a3
+[Tue Sep 30 16:26:38.545413 2025] [core:debug] [pid 8:tid 16] protocol.c(511): NULL bytes in header (79 bytes)
+[Tue Sep 30 16:26:38.572350 2025] [core:debug] [pid 9:tid 48] protocol.c(511): ...B....,..i.i.. 1299ca4298a8c7042cb6de691d69af0d
+[Tue Sep 30 16:26:38.581017 2025] [core:debug] [pid 8:tid 16] protocol.c(511): .............'.B 16030106d2010006ce0303e098278b42
+[Tue Sep 30 16:26:38.581740 2025] [core:debug] [pid 9:tid 48] protocol.c(511): ..2.@..U.L^.. jj 859d32f4409abc55c04c5eb300206a6a
+[Tue Sep 30 16:26:38.628680 2025] [core:debug] [pid 8:tid 16] protocol.c(511): ......+o........ 9c09a80e9b052b6fe98500e0a3ebb806
+[Tue Sep 30 16:26:38.657843 2025] [core:debug] [pid 9:tid 48] protocol.c(511): .......+./.,.0.. 130113021303c02bc02fc02cc030cca9
+[Tue Sep 30 16:26:38.693987 2025] [core:debug] [pid 8:tid 16] protocol.c(511): <...R.>.... .... 3c01aa8152ea3efda8c1c62010c69610
+[Tue Sep 30 16:26:38.706085 2025] [core:debug] [pid 9:tid 48] protocol.c(511): .........../.5.. cca8c013c014009c009d002f00350100
+[Tue Sep 30 16:26:38.721905 2025] [core:debug] [pid 8:tid 16] protocol.c(511): .C>J.!.j.6SZ)... c4433e4abf21bb6aab36535a290483a7
+[Tue Sep 30 16:26:38.728961 2025] [core:debug] [pid 9:tid 48] protocol.c(511): ..ZZ............ 06855a5a0000ff01000100fe0d00fa00
+[Tue Sep 30 16:26:38.730119 2025] [core:debug] [pid 8:tid 16] protocol.c(511): .....gb..,... .  dfddf1ddd76762b3e12c96c800200a  
+[Tue Sep 30 16:26:38.730477 2025] [core:debug] [pid 9:tid 48] protocol.c(511): ...... .0..R&m#3 00010001900020ae300b1a52266d2333
+[Tue Sep 30 16:26:38.730831 2025] [core:debug] [pid 8:tid 16] protocol.c(1449): [client 172.18.0.1:47294] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:38.737936 2025] [core:debug] [pid 9:tid 48] protocol.c(511): ..$...x.m....g.. c4ee24adab9678e46dcad296bd670fa0
+[Tue Sep 30 16:26:38.756390 2025] [core:debug] [pid 9:tid 48] protocol.c(511): 2x...47..%.,x..+ 3278e794ca343700d025192c78ace92b
+[Tue Sep 30 16:26:38.756822 2025] [core:debug] [pid 9:tid 48] protocol.c(511): ..D.*.j.U!...... d38744d62aaa6afa5521ddebf3030cb0
+[Tue Sep 30 16:26:38.771498 2025] [core:debug] [pid 9:tid 48] protocol.c(511): N#.0,.....;n.... 4e23a5302c85ebfdd1973b6ebb9d02fc
+[Tue Sep 30 16:26:38.785864 2025] [core:debug] [pid 9:tid 48] protocol.c(511): ,{..`y.{..&,.... 2c7be01b6079b37b981c262cea0600ea
+[Tue Sep 30 16:26:38.776302 2025] [core:debug] [pid 8:tid 19] protocol.c(511): NULL bytes in header (549 bytes)
+[Tue Sep 30 16:26:38.786784 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ...........r.... 16030106b2010006ae03037295c387bc
+[Tue Sep 30 16:26:38.786492 2025] [core:debug] [pid 9:tid 48] protocol.c(511): ..n<N..h...U.k.. dbc56e3c4ef1da6888928755cc6b0892
+[Tue Sep 30 16:26:38.787588 2025] [core:debug] [pid 9:tid 48] protocol.c(511): IaZ.........o.c! 49615a0d11e2f1e4b008851c6fc26321
+[Tue Sep 30 16:26:38.787169 2025] [core:debug] [pid 8:tid 19] protocol.c(511): K@@.T,=..&....Sx 4b404008542c3da710261982a2f55378
+[Tue Sep 30 16:26:38.789913 2025] [core:debug] [pid 8:tid 19] protocol.c(511): .#6 .....jt ...a 09233620f8c3b296b96a7420e7a1c061
+[Tue Sep 30 16:26:38.788858 2025] [core:debug] [pid 9:tid 48] protocol.c(511): ...b.KPrMz..L}.. 039e9062dd4b50724d7af6874c7db60c
+[Tue Sep 30 16:26:38.790607 2025] [core:debug] [pid 8:tid 19] protocol.c(511): .(3L.G;.....*R.. 0c28334cd4473bea127fc6c72a52c0cd
+[Tue Sep 30 16:26:38.793891 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ...id..xH.... .. bcc5c66964a499784883e0a400209a9a
+[Tue Sep 30 16:26:38.793462 2025] [core:debug] [pid 9:tid 48] protocol.c(511): &.>D..}..0.V..*^ 26113e44e15c7dbdac30ce56cb162a5e
+[Tue Sep 30 16:26:38.801930 2025] [core:debug] [pid 9:tid 48] protocol.c(511): ....             a41fe10a                        
+[Tue Sep 30 16:26:38.794791 2025] [core:debug] [pid 8:tid 19] protocol.c(511): .......+./.,.0.. 130113021303c02bc02fc02cc030cca9
+[Tue Sep 30 16:26:38.803588 2025] [core:debug] [pid 8:tid 19] protocol.c(511): .........../.5.. cca8c013c014009c009d002f00350100
+[Tue Sep 30 16:26:38.802582 2025] [core:debug] [pid 9:tid 48] protocol.c(1449): [client 172.18.0.1:47284] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:38.804562 2025] [core:debug] [pid 8:tid 19] protocol.c(511): .EZZ...+...zz... 06455a5a0000002b0007067a7a030403
+[Tue Sep 30 16:26:38.817914 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ..........localh 030000000e000c0000096c6f63616c68
+[Tue Sep 30 16:26:38.834277 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ost.3........... 6f7374003304ef04ed1a1a00010011ec
+[Tue Sep 30 16:26:38.836189 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ....c..#Z...,... 04c0fee5638305235ab0838b2c2ec6f2
+[Tue Sep 30 16:26:38.835697 2025] [core:debug] [pid 9:tid 50] protocol.c(511): NULL bytes in header (175 bytes)
+[Tue Sep 30 16:26:38.836598 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ..B~".......,../ 9bb5427e22f00da8e7b68ca32cfdc72f
+[Tue Sep 30 16:26:38.837216 2025] [core:debug] [pid 9:tid 50] protocol.c(511): ............U..| 16030106d2010006ce0303db5596127c
+[Tue Sep 30 16:26:38.837746 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ....T......gSB&1 8410c6a554b1c7d189f5166753422631
+[Tue Sep 30 16:26:38.838918 2025] [core:debug] [pid 8:tid 19] protocol.c(511): .. )(..q.9)d[@.. cccd2029282ea371ca3929645b40c6e3
+[Tue Sep 30 16:26:38.838570 2025] [core:debug] [pid 9:tid 50] protocol.c(511): G...}3wr.?i..|.. 470f1d1b7d337772bc3f69a0c87c8cf3
+[Tue Sep 30 16:26:38.839329 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ......"e.?!.,#.s 97fe8907e0a22265cb3f21e52c23d573
+[Tue Sep 30 16:26:38.839613 2025] [core:debug] [pid 9:tid 50] protocol.c(511): ..#{r.n..|. .... 979c237b720e6efe007cbc20dfe508ad
+[Tue Sep 30 16:26:38.839890 2025] [core:debug] [pid 8:tid 19] protocol.c(511): _.V.4...C.u...d. 5f1a56ff34c20df543127597c5dc6496
+[Tue Sep 30 16:26:38.840212 2025] [core:debug] [pid 9:tid 50] protocol.c(511): ^-....)....u...k 5e2dbff90d032913de9ca175c8d2ee6b
+[Tue Sep 30 16:26:38.840556 2025] [core:debug] [pid 8:tid 19] protocol.c(511): |`.j'...^..qh..b 7c60ad6a279c8ab05ed6c27168a91a62
+[Tue Sep 30 16:26:38.851476 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ^742..+,.A..+... 5e3734321ec72b2cec41ac992bcd9b10
+[Tue Sep 30 16:26:38.852090 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ..[...47@...E.V. c9c25bf8b2ab343740f7f89645b056fa
+[Tue Sep 30 16:26:38.852394 2025] [core:debug] [pid 8:tid 19] protocol.c(511): .nu..A.H_.f.(O.. b76e75e7c241dc485fc5668a284fd3e1
+[Tue Sep 30 16:26:38.852610 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ..ju.,...}$WXXI. 07dd6a75c52caebcb77d245758584992
+[Tue Sep 30 16:26:38.853006 2025] [core:debug] [pid 8:tid 19] protocol.c(511): .Y..k..)...F.)I. cf59abbd6b059c29b4fc1246b62949a8
+[Tue Sep 30 16:26:38.853520 2025] [core:debug] [pid 8:tid 19] protocol.c(511): .U..z.cl....{... 1a5514b37abe636ce5ea99e37bb50cc5
+[Tue Sep 30 16:26:38.855067 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ..$....45.*..{.V c31d24caf295ba3435ca2a92ac7bb056
+[Tue Sep 30 16:26:38.855762 2025] [core:debug] [pid 8:tid 19] protocol.c(511): W.....|LhWVC`... 578612a202ba7c4c68575643600219c1
+[Tue Sep 30 16:26:38.856186 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ..p8-...mZ...... 10a970382da2a61e6d5a88f6ca8fd816
+[Tue Sep 30 16:26:38.856961 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ...=...dY .(.0.] 14ca013d0bb28c64592011281030b35d
+[Tue Sep 30 16:26:38.850211 2025] [core:debug] [pid 9:tid 50] protocol.c(511): ..z.}.&....4. .. 8cf67a1f7db226a810c5aa340020dada
+[Tue Sep 30 16:26:38.865791 2025] [core:debug] [pid 8:tid 19] protocol.c(511): 7..a..D.,...r.?G 37b7c161c919441c2ce8c4b972873f47
+[Tue Sep 30 16:26:38.866403 2025] [core:debug] [pid 9:tid 50] protocol.c(511): .......+./.,.0.. 130113021303c02bc02fc02cc030cca9
+[Tue Sep 30 16:26:38.874833 2025] [core:debug] [pid 9:tid 50] protocol.c(511): .........../.5.. cca8c013c014009c009d002f00350100
+[Tue Sep 30 16:26:38.867359 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ..B.jE.0j./..+.. d19442966a4508306a952f1d042b00e9
+[Tue Sep 30 16:26:38.883456 2025] [core:debug] [pid 9:tid 50] protocol.c(511): .e.............. 06651a1a000000050005010000000000
+[Tue Sep 30 16:26:38.883797 2025] [core:debug] [pid 8:tid 19] protocol.c(511): ..[K.!S..e..A... 090c5b4bc22153f48765cef941c8e41e
+[Tue Sep 30 16:26:38.884129 2025] [core:debug] [pid 9:tid 50] protocol.c(511): ................ 0d001200100403080404010503080505
+[Tue Sep 30 16:26:38.885758 2025] [core:debug] [pid 8:tid 19] protocol.c(511): .9.>R.K.B.z...tp bf39123e52c04b0842117a16c8e67470
+[Tue Sep 30 16:26:38.886114 2025] [core:debug] [pid 9:tid 50] protocol.c(511): ..........+..... 010806060100120000002b000706caca
+[Tue Sep 30 16:26:38.892791 2025] [core:debug] [pid 9:tid 50] protocol.c(511): ....D......h2..  0304030344cd00050003026832000a  
+[Tue Sep 30 16:26:38.886395 2025] [core:debug] [pid 8:tid 19] protocol.c(511): .n..........y'7c f46eec9a94ddeb860592b3b179273763
+[Tue Sep 30 16:26:38.900024 2025] [core:debug] [pid 9:tid 50] protocol.c(1449): [client 172.18.0.1:47322] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:38.902021 2025] [core:debug] [pid 8:tid 19] protocol.c(511): .p...*.#.-5YGax. b2709bc4082a1123882d35594761789f
+[Tue Sep 30 16:26:38.903911 2025] [core:debug] [pid 8:tid 19] protocol.c(511): .e2).ZE..k...98. d9653229b05a4517956b185ccb3938db
+[Tue Sep 30 16:26:38.907288 2025] [core:debug] [pid 8:tid 19] protocol.c(511): .k.`.            c96b9b600a                      
+[Tue Sep 30 16:26:38.964121 2025] [core:debug] [pid 8:tid 19] protocol.c(1449): [client 172.18.0.1:47310] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:39.530120 2025] [core:debug] [pid 9:tid 51] protocol.c(511): NULL bytes in header (499 bytes)
+[Tue Sep 30 16:26:39.531683 2025] [core:debug] [pid 9:tid 52] protocol.c(511): NULL bytes in header (703 bytes)
+[Tue Sep 30 16:26:39.536148 2025] [core:debug] [pid 9:tid 51] protocol.c(511): ..............p. 16030106d2010006ce03031912a37011
+[Tue Sep 30 16:26:39.536453 2025] [core:debug] [pid 9:tid 52] protocol.c(511): ............/.ID 16030106b2010006ae0303842fcc4944
+[Tue Sep 30 16:26:39.536692 2025] [core:debug] [pid 9:tid 51] protocol.c(511): {oO..df.XL.x../3 7b6f4ff7d5646615584c1278f0ef2f33
+[Tue Sep 30 16:26:39.536988 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .....Z.q4...|w(. d0d0e8d9905a087134fd8eff7c772817
+[Tue Sep 30 16:26:39.537277 2025] [core:debug] [pid 9:tid 51] protocol.c(511): .*...~.y2j! &... f62a89b9a27efe79326a2120261498c3
+[Tue Sep 30 16:26:39.537542 2025] [core:debug] [pid 9:tid 52] protocol.c(511): 6.2...:.".. 6..I 36aa32a5d5b03a9d228e812036d70e49
+[Tue Sep 30 16:26:39.538060 2025] [core:debug] [pid 9:tid 52] protocol.c(511): ..;bS'~C..,..Ad. c1ad3b6253277e43c5e12c10cd416413
+[Tue Sep 30 16:26:39.537767 2025] [core:debug] [pid 9:tid 51] protocol.c(511): ....OXS/.v.....M c504daff4f58532fda760e010e99814d
+[Tue Sep 30 16:26:39.538367 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .Wg..B.W..... .. d25767109c42fc57830c81c500201a1a
+[Tue Sep 30 16:26:39.538623 2025] [core:debug] [pid 9:tid 51] protocol.c(511): .Qqq...X..... ** fa517171adada858180ece8b00202a2a
+[Tue Sep 30 16:26:39.539121 2025] [core:debug] [pid 9:tid 51] protocol.c(511): .......+./.,.0.. 130113021303c02bc02fc02cc030cca9
+[Tue Sep 30 16:26:39.538887 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .......+./.,.0.. 130113021303c02bc02fc02cc030cca9
+[Tue Sep 30 16:26:39.539352 2025] [core:debug] [pid 9:tid 51] protocol.c(511): .........../.5.. cca8c013c014009c009d002f00350100
+[Tue Sep 30 16:26:39.539605 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .........../.5.. cca8c013c014009c009d002f00350100
+[Tue Sep 30 16:26:39.539851 2025] [core:debug] [pid 9:tid 51] protocol.c(511): .e.............l 0665eaea00000000000e000c0000096c
+[Tue Sep 30 16:26:39.540123 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .EZZ.........h2. 06455a5a00000010000e000c02683208
+[Tue Sep 30 16:26:39.540340 2025] [core:debug] [pid 9:tid 51] protocol.c(511): ocalhost........ 6f63616c686f7374000d001200100403
+[Tue Sep 30 16:26:39.541790 2025] [core:debug] [pid 9:tid 52] protocol.c(511): http/1.1........ 687474702f312e31ff01000100000b00
+[Tue Sep 30 16:26:39.545660 2025] [core:debug] [pid 9:tid 51] protocol.c(511): ..............D. 080404010503080505010806060144cd
+[Tue Sep 30 16:26:39.546418 2025] [core:debug] [pid 9:tid 52] protocol.c(511): ...........3.... 020100001b0003020002003304ef04ed
+[Tue Sep 30 16:26:39.546747 2025] [core:debug] [pid 9:tid 51] protocol.c(511): .....h2.+...ZZ.. 00050003026832002b0007065a5a0304
+[Tue Sep 30 16:26:39.547313 2025] [core:debug] [pid 9:tid 51] protocol.c(511): .........h2.http 03030010000e000c0268320868747470
+[Tue Sep 30 16:26:39.547087 2025] [core:debug] [pid 9:tid 52] protocol.c(511): ...........A.H.. aaaa00010011ec04c00e1b41e748be96
+[Tue Sep 30 16:26:39.547545 2025] [core:debug] [pid 9:tid 51] protocol.c(511): /1.1............ 2f312e31000b00020100fe0d00da0000
+[Tue Sep 30 16:26:39.547812 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .U...C..o....... 1655b9e7824305b06f0cc2a9b6ac0ba7
+[Tue Sep 30 16:26:39.548098 2025] [core:debug] [pid 9:tid 51] protocol.c(511): ...x. ...#>&t].. 010001780020d3eff8233e26745d88b5
+[Tue Sep 30 16:26:39.548598 2025] [core:debug] [pid 9:tid 51] protocol.c(511): ..?....^.C.O.._. bd863f11cd18d05ecf43004fb2be5f19
+[Tue Sep 30 16:26:39.548358 2025] [core:debug] [pid 9:tid 52] protocol.c(511): *. .......'lwv.n 2af820c3fd079ac61a05276c7776936e
+[Tue Sep 30 16:26:39.548827 2025] [core:debug] [pid 9:tid 51] protocol.c(511): J..0.'.......... 4af48c30052700b01bf4ade699d0e5d7
+[Tue Sep 30 16:26:39.549125 2025] [core:debug] [pid 9:tid 52] protocol.c(511): ...t2..:=Dy..B.. aec4c274320bc43a3d447905b042c41c
+[Tue Sep 30 16:26:39.549367 2025] [core:debug] [pid 9:tid 51] protocol.c(511): ,+l....$....u... 2c2b6c9792b684242ee3b5c475c4bcf7
+[Tue Sep 30 16:26:39.549596 2025] [core:debug] [pid 9:tid 52] protocol.c(511): ......u.....Z.}. 84a9820383f97508c6c78ae75aa37dc9
+[Tue Sep 30 16:26:39.549817 2025] [core:debug] [pid 9:tid 51] protocol.c(511): ..c<-v'o.F.....M 80e1633c2d76276ff3467fd207c0c64d
+[Tue Sep 30 16:26:39.550083 2025] [core:debug] [pid 9:tid 52] protocol.c(511): r|5_....s...Q.t! 727c355f84d2cee873c205d551b57421
+[Tue Sep 30 16:26:39.550298 2025] [core:debug] [pid 9:tid 51] protocol.c(511): ]..~.....;...}YR 5da4a27e1107a209993bb8af057d5952
+[Tue Sep 30 16:26:39.550550 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .UD/..1. .g..... 1555442fa0a431d920df67cb8cb80997
+[Tue Sep 30 16:26:39.550788 2025] [core:debug] [pid 9:tid 51] protocol.c(511): .IJ.c1..fRt..z.. d5494a856331190166527404ef7ae59d
+[Tue Sep 30 16:26:39.551035 2025] [core:debug] [pid 9:tid 52] protocol.c(511): HUo.C......S.... 48556fb443e680a5868cb45301b1aad9
+[Tue Sep 30 16:26:39.551545 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .r..Z2~.(G:7..b. 1f7292995a327ed628473a37a8f162b3
+[Tue Sep 30 16:26:39.551264 2025] [core:debug] [pid 9:tid 51] protocol.c(511): hO......I......> 684fd2c80586a0a8491bcbeadeb1913e
+[Tue Sep 30 16:26:39.551806 2025] [core:debug] [pid 9:tid 52] protocol.c(511): C.Q..E@.1.!....L 43a8519ce84540fc31112182d1b30f4c
+[Tue Sep 30 16:26:39.552039 2025] [core:debug] [pid 9:tid 51] protocol.c(511): .....Gm[.m.@...+ b7ab8219e8476d5b7f6d8040b8ee942b
+[Tue Sep 30 16:26:39.552324 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .m..1.... !c.5.S 946daad53100f0a9922021630c35e053
+[Tue Sep 30 16:26:39.552571 2025] [core:debug] [pid 9:tid 51] protocol.c(511): =.m..].O.u.....< 3df26dd9ad5d834fe075c0aadc15f03c
+[Tue Sep 30 16:26:39.552820 2025] [core:debug] [pid 9:tid 52] protocol.c(511): a..3..r..<..A..g 61b5d233a3b072e4e93ceeea41d01667
+[Tue Sep 30 16:26:39.553036 2025] [core:debug] [pid 9:tid 51] protocol.c(511): .....=G.i`-.M&.M 19a3cd13a13d47c369602de64d26a64d
+[Tue Sep 30 16:26:39.553285 2025] [core:debug] [pid 9:tid 52] protocol.c(511): ..19.i.....9.Z)I 89ea31391c699a8bbff18a39105a2949
+[Tue Sep 30 16:26:39.553517 2025] [core:debug] [pid 9:tid 51] protocol.c(511): . 'vx..r........ b42027767811b172a5d996e3c7a402b7
+[Tue Sep 30 16:26:39.553813 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .....".@........ a289dff4a9225c40f491c51fb2ad91a8
+[Tue Sep 30 16:26:39.554037 2025] [core:debug] [pid 9:tid 51] protocol.c(511): ...p.P..~..?.... 8a9cf170e0509de47eb4913fa4b3da2e
+[Tue Sep 30 16:26:39.554321 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .1...D..5.u..g.m 8931c6bfed4484fd359175050c67b66d
+[Tue Sep 30 16:26:39.554518 2025] [core:debug] [pid 9:tid 51] protocol.c(511): c.k....y........ 63d16bb1c5adf579ff01000100000500
+[Tue Sep 30 16:26:39.554785 2025] [core:debug] [pid 9:tid 52] protocol.c(511): B..ay.(..X;A.... 42888a6179c528b11c583b4111f69f5c
+[Tue Sep 30 16:26:39.555028 2025] [core:debug] [pid 9:tid 51] protocol.c(511): ...........3.... 05010000000000120000003304ef04ed
+[Tue Sep 30 16:26:39.555628 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .!e...qe...L...1 c92165c2a7e67165e98a0c4cdabbc231
+[Tue Sep 30 16:26:39.555861 2025] [core:debug] [pid 9:tid 51] protocol.c(511): .........g....M^ fafa00010011ec04c06791adb1a34d5e
+[Tue Sep 30 16:26:39.556107 2025] [core:debug] [pid 9:tid 52] protocol.c(511): +..Q.WQb..,...|N 2b1700517f57516203892cec88b97c4e
+[Tue Sep 30 16:26:39.556410 2025] [core:debug] [pid 9:tid 51] protocol.c(511): *..y...^~.e....6 2ac7087912a3875e7eac6594f80bad36
+[Tue Sep 30 16:26:39.556729 2025] [core:debug] [pid 9:tid 52] protocol.c(511): ....z.....v....y eef2c5e57aa6a6b6140176a71dbac079
+[Tue Sep 30 16:26:39.556983 2025] [core:debug] [pid 9:tid 51] protocol.c(511): ...^.5X.7$].'g.H 9216f25ec835589b37245d132767a148
+[Tue Sep 30 16:26:39.558377 2025] [core:debug] [pid 9:tid 52] protocol.c(511): W...=N.'..{.1.T. 578604b43d4ea327960b7b2e31c654d5
+[Tue Sep 30 16:26:39.559781 2025] [core:debug] [pid 9:tid 51] protocol.c(511): .y.              e6790a                          
+[Tue Sep 30 16:26:39.560346 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .5..X+tD.....|.. 1b35caca582b7444f290f9eaa67c1610
+[Tue Sep 30 16:26:39.560613 2025] [core:debug] [pid 9:tid 51] protocol.c(1449): [client 172.18.0.1:47334] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:39.560890 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .'P%G..8.yk..... ac27502547aeb738bd796bc0e5e505a0
+[Tue Sep 30 16:26:39.561751 2025] [core:debug] [pid 9:tid 52] protocol.c(511): 1..3.}9.x...<QtZ 311ab133907d3903781198cc3c51745a
+[Tue Sep 30 16:26:39.563414 2025] [core:debug] [pid 9:tid 52] protocol.c(511): ....r.p..mh` ..Y 8d16e4ba72e57005ec6d68602080b959
+[Tue Sep 30 16:26:39.565620 2025] [core:debug] [pid 9:tid 52] protocol.c(511): ...7............ 9db514371c80e9950bd490b81004bdfd
+[Tue Sep 30 16:26:39.565319 2025] [core:debug] [pid 9:tid 53] protocol.c(511): NULL bytes in header (204 bytes)
+[Tue Sep 30 16:26:39.566054 2025] [core:debug] [pid 9:tid 52] protocol.c(511): irr.'.q4Ken.$`.. 697272d927f471344b656e992460f2ea
+[Tue Sep 30 16:26:39.566323 2025] [core:debug] [pid 9:tid 53] protocol.c(511): ...........G6A.. 16030106b2010006ae030347364102a1
+[Tue Sep 30 16:26:39.566573 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .........{]..25. b992e412f4d68da6f37b5de35c3235b5
+[Tue Sep 30 16:26:39.566936 2025] [core:debug] [pid 9:tid 53] protocol.c(511): ^....A|..P..EO.{ 5e1f02cabc417c95ec5097e9454f987b
+[Tue Sep 30 16:26:39.567358 2025] [core:debug] [pid 9:tid 52] protocol.c(511): ..7a......g...z. 5cc63761f08cba970cf767ceb0d17a05
+[Tue Sep 30 16:26:39.567754 2025] [core:debug] [pid 9:tid 53] protocol.c(511): &..dAH....a ..@9 26fef0644148d89899f4612013094039
+[Tue Sep 30 16:26:39.568109 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .......1...X...Z e8b8ed89aced80318dda075891ac0d5a
+[Tue Sep 30 16:26:39.568620 2025] [core:debug] [pid 9:tid 53] protocol.c(511): `..E..d9y.Ou{... 60ceec45eb2e643979864f757bb0b1c7
+[Tue Sep 30 16:26:39.569103 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .....x<.L.N{.{#. a5b5f51285783c964c974e7ba37b23c7
+[Tue Sep 30 16:26:39.569372 2025] [core:debug] [pid 9:tid 53] protocol.c(511): ....MA....... ZZ 07e2ae884d41c68f11b4061d00205a5a
+[Tue Sep 30 16:26:39.569627 2025] [core:debug] [pid 9:tid 52] protocol.c(511): A@L(............ 41404c28a60da5d8c2c0d916c5e7bebd
+[Tue Sep 30 16:26:39.570007 2025] [core:debug] [pid 9:tid 53] protocol.c(511): .......+./.,.0.. 130113021303c02bc02fc02cc030cca9
+[Tue Sep 30 16:26:39.570266 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .)R..E...a.G0.oB 1a2952cc0f45c693ec61c547309d6f42
+[Tue Sep 30 16:26:39.570599 2025] [core:debug] [pid 9:tid 53] protocol.c(511): .........../.5.. cca8c013c014009c009d002f00350100
+[Tue Sep 30 16:26:39.570914 2025] [core:debug] [pid 9:tid 52] protocol.c(511): ....t.c.zBp.Sx.) 9ad8830074c363ef7a4270a95378a829
+[Tue Sep 30 16:26:39.571133 2025] [core:debug] [pid 9:tid 53] protocol.c(511): .E.............l 0645caca00000000000e000c0000096c
+[Tue Sep 30 16:26:39.571499 2025] [core:debug] [pid 9:tid 52] protocol.c(511): .53OD?..4T%Z4..  f535334f443f04933454255a34b00a  
+[Tue Sep 30 16:26:39.571710 2025] [core:debug] [pid 9:tid 53] protocol.c(511): ocalhost.....D.. 6f63616c686f7374ff0100010044cd00
+[Tue Sep 30 16:26:39.571953 2025] [core:debug] [pid 9:tid 52] protocol.c(1449): [client 172.18.0.1:47336] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:39.572330 2025] [core:debug] [pid 9:tid 53] protocol.c(511): ....h2.......... 05000302683200120000000b00020100
+[Tue Sep 30 16:26:39.579417 2025] [core:debug] [pid 8:tid 20] protocol.c(511): NULL bytes in header (665 bytes)
+[Tue Sep 30 16:26:39.580152 2025] [core:debug] [pid 9:tid 53] protocol.c(511): ..........+..... 000500050100000000002b000706baba
+[Tue Sep 30 16:26:39.581229 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .............".D 16030106d2010006ce03030da5228944
+[Tue Sep 30 16:26:39.581730 2025] [core:debug] [pid 9:tid 53] protocol.c(511): ................ 03040303000d00120010040308040401
+[Tue Sep 30 16:26:39.582078 2025] [core:debug] [pid 8:tid 20] protocol.c(511): +.Z.r..E.....s.h 2ba25a8e72e2dc458605a1d884738468
+[Tue Sep 30 16:26:39.582359 2025] [core:debug] [pid 9:tid 53] protocol.c(511): ............     05030805050108060601000a        
+[Tue Sep 30 16:26:39.582676 2025] [core:debug] [pid 8:tid 20] protocol.c(511): :j.8.A4..M. .... 3a6a8738e1413486ea4d1e20fc1014c6
+[Tue Sep 30 16:26:39.582910 2025] [core:debug] [pid 9:tid 53] protocol.c(1449): [client 172.18.0.1:47348] AH00566: request failed: malformed request line
+[Tue Sep 30 16:26:39.583189 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .Z.B:..W..j.&.$. be5aef423a9b92578df76ada2614249d
+[Tue Sep 30 16:26:39.584122 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .K..G...DC... ** e14b1216478bf3b14443c91300202a2a
+[Tue Sep 30 16:26:39.586289 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .......+./.,.0.. 130113021303c02bc02fc02cc030cca9
+[Tue Sep 30 16:26:39.586618 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .........../.5.. cca8c013c014009c009d002f00350100
+[Tue Sep 30 16:26:39.586822 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .e............3. 0665caca0000001b0003020002003304
+[Tue Sep 30 16:26:39.587115 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .............(.M ef04edeaea00010011ec04c09528114d
+[Tue Sep 30 16:26:39.587343 2025] [core:debug] [pid 8:tid 20] protocol.c(511): ....EY.0.).]S..K 03c6b31b455981309229c05d5393ad4b
+[Tue Sep 30 16:26:39.587560 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .Fx@.iT..j....|| 9d46784009695401d56a18fa14ad7c7c
+[Tue Sep 30 16:26:39.587775 2025] [core:debug] [pid 8:tid 20] protocol.c(511): ...B.w.L2.)..... 8fc61d42b777854c320429b9f3a0b59a
+[Tue Sep 30 16:26:39.588055 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .........kft.0.d f5c7930b1194d2ab8a6b6674f430e564
+[Tue Sep 30 16:26:39.588319 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .}!..(..y.e1.u.P 967d21b07f28989479186531b0758250
+[Tue Sep 30 16:26:39.588552 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .Q-vVgl.d.5Z.b.b 1b512d7656676ca764ba355a9062bd62
+[Tue Sep 30 16:26:39.588802 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .I>.._y..Bk.w... 93493eaa855f79afd7426b18770210bb
+[Tue Sep 30 16:26:39.589085 2025] [core:debug] [pid 8:tid 20] protocol.c(511): `..n.ZS.{.+..29. 6002a46e965a53b97b9c2bc2813239cf
+[Tue Sep 30 16:26:39.589343 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .j.....z..8R.. . c26ac7df911ab97a11813852e9cc20ed
+[Tue Sep 30 16:26:39.589582 2025] [core:debug] [pid 8:tid 20] protocol.c(511): h......p...s.... 681ec4b798dfd870b2bc9b73f18cfb0c
+[Tue Sep 30 16:26:39.589801 2025] [core:debug] [pid 8:tid 20] protocol.c(511): q..,..Y.F0...i.. 71d6ea2cabd659044630dccbbd699719
+[Tue Sep 30 16:26:39.590034 2025] [core:debug] [pid 8:tid 20] protocol.c(511): <.....NJ=@5t.:.. 3cebc2b9d0814e4a3d403574103a1ae5
+[Tue Sep 30 16:26:39.590542 2025] [core:debug] [pid 8:tid 20] protocol.c(511): ;...aN.e.t.p.R>. 3b08a217614ef865d274ae70a9523eb9
+[Tue Sep 30 16:26:39.595959 2025] [core:debug] [pid 8:tid 20] protocol.c(511): 0=zO?.z.s[.{@6.8 303d7a4f3fb77a0f735bfe7b40361a38
+[Tue Sep 30 16:26:39.597133 2025] [core:debug] [pid 8:tid 20] protocol.c(511): fbV..C..L.0.E... 666256a8b54309c74ccd30b045b590b5
+[Tue Sep 30 16:26:39.597407 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .I........{.. .. c949e7991aced38e15107bda0620ea1b
+[Tue Sep 30 16:26:39.597636 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .n.. ..;5~..c... 846eb98420102e3b357ef0cb63a7880d
+[Tue Sep 30 16:26:39.597815 2025] [core:debug] [pid 8:tid 20] protocol.c(511): C."CEj....j..... 43d22243456af6e5caf66a878f888598
+[Tue Sep 30 16:26:39.598057 2025] [core:debug] [pid 8:tid 20] protocol.c(511): ...WX.L.:F..t... e49e9d5758d54c023a468f7f741dcb0b
+[Tue Sep 30 16:26:39.598512 2025] [core:debug] [pid 8:tid 20] protocol.c(511): ......7..b.zA..0 1c8ce2069eb1378be462907a419d9730
+[Tue Sep 30 16:26:39.598838 2025] [core:debug] [pid 8:tid 20] protocol.c(511): J..g...y.1.[D.g. 4a8a0b67b4cf04799831aa5b449167a0
+[Tue Sep 30 16:26:39.599096 2025] [core:debug] [pid 8:tid 20] protocol.c(511): +..EP.<..../rpy. 2b931e4550c63cc488c1c82f72707911
+[Tue Sep 30 16:26:39.599297 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .+..7S..l.#...w. ad2bb6043753b1cb6c9a23a185bd77ac
+[Tue Sep 30 16:26:39.599485 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .(.}.......t.*.. ab280d7dea921310871e1a748a2a1f18
+[Tue Sep 30 16:26:39.599677 2025] [core:debug] [pid 8:tid 20] protocol.c(511): ......1$..L9.p.. e00819d3898c3124fc5c4c3908709dbc
+[Tue Sep 30 16:26:39.599872 2025] [core:debug] [pid 8:tid 20] protocol.c(511): ...?.'pL.Al.@.`. 19d0cb3f8d27704c15416c8940856006
+[Tue Sep 30 16:26:39.600093 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .gh3Y...^a.#.k.% 0e6768335918d4d05e611c23f36b1525
+[Tue Sep 30 16:26:39.600284 2025] [core:debug] [pid 8:tid 20] protocol.c(511): ......*...n{.b.K 98c285dbc3182ac589016e7b8a62004b
+[Tue Sep 30 16:26:39.600479 2025] [core:debug] [pid 8:tid 20] protocol.c(511): ....c....5R....+ a003eb1863c999911235520c808dda2b
+[Tue Sep 30 16:26:39.601247 2025] [core:debug] [pid 8:tid 20] protocol.c(511): #.edV(hl/..J.SD. 231465645628686c2f1bb04a1853448b
+[Tue Sep 30 16:26:39.601492 2025] [core:debug] [pid 8:tid 20] protocol.c(511): .Q.u.....%.....V aa51e27591cbf0b4182513898310f156
+[Tue Sep 30 16:26:39.601701 2025] [core:debug] [pid 8:tid 20] protocol.c(511): q....4F}.5...... 7103f588ae34467dd635cdc5bfef8c89
+[Tue Sep 30 16:26:39.601904 2025] [core:debug] [pid 8:tid 20] protocol.c(511): E.![.(.R.        45a0215be528aa520a              
+[Tue Sep 30 16:26:39.602322 2025] [core:debug] [pid 8:tid 20] protocol.c(1449): [client 172.18.0.1:47364] AH00566: request failed: malformed request line
+[Tue Sep 30 16:33:23.848002 2025] [authz_core:debug] [pid 9:tid 54] mod_authz_core.c(815): [client 172.18.0.1:42118] AH01626: authorization result of Require all granted: granted
+[Tue Sep 30 16:33:23.848409 2025] [authz_core:debug] [pid 9:tid 54] mod_authz_core.c(815): [client 172.18.0.1:42118] AH01626: authorization result of <RequireAny>: granted
+[Tue Sep 30 16:33:24.755228 2025] [authz_core:debug] [pid 9:tid 55] mod_authz_core.c(815): [client 172.18.0.1:42118] AH01626: authorization result of Require all granted: granted, referer: http://localhost:18080/
+[Tue Sep 30 16:33:24.763906 2025] [authz_core:debug] [pid 9:tid 55] mod_authz_core.c(815): [client 172.18.0.1:42118] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost:18080/
+[Tue Sep 30 16:33:24.770668 2025] [core:info] [pid 9:tid 55] [client 172.18.0.1:42118] AH00128: File does not exist: /usr/local/apache2/htdocs/favicon.ico, referer: http://localhost:18080/
+[Tue Sep 30 16:35:11.317171 2025] [mpm_event:debug] [pid 8:tid 8] event.c(583): wake up listener
+[Tue Sep 30 16:35:11.317256 2025] [mpm_event:debug] [pid 9:tid 9] event.c(583): wake up listener
+[Tue Sep 30 16:35:11.335836 2025] [core:info] [pid 1:tid 1] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Tue Sep 30 16:35:11.336278 2025] [mpm_event:notice] [pid 1:tid 1] AH00492: caught SIGWINCH, shutting down gracefully
+[Tue Sep 30 16:35:12.337065 2025] [mpm_event:debug] [pid 1:tid 1] event.c(726): Child 0 stopped: pid 8, gen 0, active 1/6, total 1/2/16, quiescing 1
+[Tue Sep 30 16:35:12.344773 2025] [mpm_event:debug] [pid 1:tid 1] event.c(726): Child 1 stopped: pid 9, gen 0, active 0/6, total 0/2/16, quiescing 1
