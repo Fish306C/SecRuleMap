@@ -1,0 +1,10 @@
+{
+    "watch": [
+        "src"
+    ],
+    "ignore": [
+        "reports/*",
+        "tool_compliance/src/*.json"
+    ],
+    "ext": "js,json"
+}

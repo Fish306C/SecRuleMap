@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>mini_zap report</title>
+    <style> body{font-family: Arial, sans-serif} .issue{border:1px solid #ddd;padding:8px;margin:8px 0} </style>
+  </head>
+  <body>
+    <h1>mini_zap report</h1>
+    <p>Start URL: {{ start_url }}</p>
+    <h2>Results ({{ results|length }})</h2>
+    {% for r in results %}
+      <div class="page">
+        <h3>{{ r.url }} — {{ r.status_code }}</h3>
+        <h4>Findings ({{ r.findings|length }})</h4>
+        {% if r.findings %}
+          {% for f in r.findings %}
+            <div class="issue">
+              <b>{{ f.type }}</b> — {{ f.detail or f.evidence or "" }} (<i>{{ f.severity or "n/a" }}</i>)
+              {% if f.header %}<div>Header: {{ f.header }}</div>{% endif %}
+            </div>
+          {% endfor %}
+        {% else %}
+          <p>No issues found.</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </body>
+</html>

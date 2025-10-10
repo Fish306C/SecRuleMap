@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "axios": "^1.12.2",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^5.0.2",
+    "mongoose": "^8.18.1",
+    "mongoose-slug-updater": "^2.4.0",
+    "multer": "^2.0.0-rc.2",
+    "nodemon": "^3.1.10",
+    "python-shell": "^5.0.0",
+    "uuidv4": "^6.2.13",
+    "ws": "^8.18.3"
+  },
+  "scripts": {
+    "start": "nodemon --inspect Server.js"
+  }
+}

@@ -1,0 +1,2097 @@
+{
+  "start_url": "http://localhost:3000/",
+  "summary": {
+    "scanned": 23
+  },
+  "results": [
+    {
+      "url": "http://localhost:3000",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "29899",
+        "ETag": "W/\"74cb-bg/9oifq6RXkLpCyhhkaMgLWiN0\"",
+        "Date": "Sun, 05 Oct 2025 18:03:16 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "29899",
+        "ETag": "W/\"74cb-bg/9oifq6RXkLpCyhhkaMgLWiN0\"",
+        "Date": "Sun, 05 Oct 2025 18:03:16 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/chuyengia",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "9735",
+        "ETag": "W/\"2607-R17I1LAMuZ4iiHyMuA2FFxSPnJE\"",
+        "Date": "Sun, 05 Oct 2025 18:03:16 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/congdong",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "18523",
+        "ETag": "W/\"485b-uIqYBAniI2Vsh73UT/bWoaYqdcE\"",
+        "Date": "Sun, 05 Oct 2025 18:03:16 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/menu/bua-sang",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "21052",
+        "ETag": "W/\"523c-Pgnwj6bywS54K9WsXjuqGb81YAo\"",
+        "Date": "Sun, 05 Oct 2025 18:03:16 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/menu/bua-toi",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "23192",
+        "ETag": "W/\"5a98-zBChx2j468v5FDsnj7N9jssWXxQ\"",
+        "Date": "Sun, 05 Oct 2025 18:03:16 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/menu/bua-trua",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "20685",
+        "ETag": "W/\"50cd-sYEt3gRgcSTeQfPZLR4ZiS2hkLY\"",
+        "Date": "Sun, 05 Oct 2025 18:03:16 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/product/detail/biscotti-nguyen-cam-an-kieng-hebekery-vi-khoai-lang-tim",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "16271",
+        "ETag": "W/\"3f8f-xJzx9LTorOVBOQRGD8M4uj7pNUI\"",
+        "Date": "Sun, 05 Oct 2025 18:03:16 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/product/detail/biscotti-nguyen-cam-an-kieng-vi-trai-cay-nhiet-doi-hebekery",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "15437",
+        "ETag": "W/\"3c4d-up0rN4WxzHW7rlylzyh5i7P0Waw\"",
+        "Date": "Sun, 05 Oct 2025 18:03:16 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/product/detail/bun-gao-lut-do-hebekery",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "15222",
+        "ETag": "W/\"3b76-HNwrt0U/qc+sIINnb4/Cnt6EI6s\"",
+        "Date": "Sun, 05 Oct 2025 18:03:16 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/product/detail/granola-truly-healthy-hebekery",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "16178",
+        "ETag": "W/\"3f32-QwpjOJyKEXFrW0QNgxdbS97ue2I\"",
+        "Date": "Sun, 05 Oct 2025 18:03:17 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/product/detail/granola-truly-healthy-vi-chocolate-hebekery-by-hebe-ngu-coc-dinh-duong-lanh-manh-tu-nhien",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "15983",
+        "ETag": "W/\"3e6f-Eo9MmwgF+HZHnBiFR0OMGpqk274\"",
+        "Date": "Sun, 05 Oct 2025 18:03:17 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/product/detail/hat-chia-organic-dk-harvest-nhap-khau-peru-or-giau-omega-3-ho-tro-giam-can-do-tinh-khiet-cao",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "16237",
+        "ETag": "W/\"3f6d-E0KIeIT3zbsvVPNiWGaSAClW8sQ\"",
+        "Date": "Sun, 05 Oct 2025 18:03:17 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/product/detail/hat-diem-mach-trang-dk-harvest-nhap-khau-peru",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "14694",
+        "ETag": "W/\"3966-qb/KgNS89qy+fh2mbHmcxBKYlzw\"",
+        "Date": "Sun, 05 Oct 2025 18:03:17 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/product/detail/man-den-say-nhap-khau-chi-le",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "15461",
+        "ETag": "W/\"3c65-kixhIT8zVqxrdtrQB4laEjwXqIU\"",
+        "Date": "Sun, 05 Oct 2025 18:03:17 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/product/detail/thanh-hat-muoi-hong-dinh-duong",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "15282",
+        "ETag": "W/\"3bb2-ZvhEwOsp2vcEFVEy/ZIL5KpzHfc\"",
+        "Date": "Sun, 05 Oct 2025 18:03:17 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/product/detail/tra-hoa-cuc-vang-say-kho-nguyen-bong",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "15747",
+        "ETag": "W/\"3d83-Vhbhq4Uedo6UAvJDtKk236G0uVY\"",
+        "Date": "Sun, 05 Oct 2025 18:03:17 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/product/detail/tra-tam-sen-dong-thap",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "15989",
+        "ETag": "W/\"3e75-yhhjSVrBbPKpjcx+j5d3EOmjv9o\"",
+        "Date": "Sun, 05 Oct 2025 18:03:17 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/products/dichvu",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "10469",
+        "ETag": "W/\"28e5-JdzoCuDMg6fTCQQ5jgRVg6zDxWc\"",
+        "Date": "Sun, 05 Oct 2025 18:03:17 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/products/giohang",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "8904",
+        "ETag": "W/\"22c8-RL2vugDzokd3eTSZvzaYJLeeSMU\"",
+        "Date": "Sun, 05 Oct 2025 18:03:17 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/products/taptheduc",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "13304",
+        "ETag": "W/\"33f8-5AoFdtuePIOj3b+dG9MO3wqmYnQ\"",
+        "Date": "Sun, 05 Oct 2025 18:03:17 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/products/users/681f91b7507b0980c99d4d0c",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "660",
+        "ETag": "W/\"294-T+DxYDMkRGcLWclMb2agf5ZtsAY\"",
+        "Date": "Sun, 05 Oct 2025 18:03:17 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        },
+        {
+          "type": "sensitive_data_exposure",
+          "pattern": "password",
+          "severity": "medium",
+          "detail": "Found pattern 'password' in response body"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:3000/sanpham",
+      "status_code": 200,
+      "headers": {
+        "X-Powered-By": "Express",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "18671",
+        "ETag": "W/\"48ef-1XoWd3dkI1z6uy6QNCrmNNezGU8\"",
+        "Date": "Sun, 05 Oct 2025 18:03:17 GMT",
+        "Connection": "keep-alive",
+        "Keep-Alive": "timeout=5"
+      },
+      "findings": [
+        {
+          "type": "missing_header",
+          "header": "strict-transport-security",
+          "severity": "medium",
+          "detail": "Header strict-transport-security is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "content-security-policy",
+          "severity": "medium",
+          "detail": "Header content-security-policy is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-frame-options",
+          "severity": "low",
+          "detail": "Header x-frame-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "x-content-type-options",
+          "severity": "low",
+          "detail": "Header x-content-type-options is missing"
+        },
+        {
+          "type": "missing_header",
+          "header": "referrer-policy",
+          "severity": "low",
+          "detail": "Header referrer-policy is missing"
+        }
+      ]
+    }
+  ],
+  "rule_map": {
+    "UNMAPPED": [
+      {
+        "url": "http://localhost:3000",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/chuyengia",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/chuyengia",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/chuyengia",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/chuyengia",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/chuyengia",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/congdong",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/congdong",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/congdong",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/congdong",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/congdong",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/menu/bua-sang",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/menu/bua-sang",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/menu/bua-sang",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/menu/bua-sang",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/menu/bua-sang",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/menu/bua-toi",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/menu/bua-toi",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/menu/bua-toi",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/menu/bua-toi",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/menu/bua-toi",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/menu/bua-trua",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/menu/bua-trua",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/menu/bua-trua",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/menu/bua-trua",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/menu/bua-trua",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/biscotti-nguyen-cam-an-kieng-hebekery-vi-khoai-lang-tim",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/biscotti-nguyen-cam-an-kieng-hebekery-vi-khoai-lang-tim",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/biscotti-nguyen-cam-an-kieng-hebekery-vi-khoai-lang-tim",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/biscotti-nguyen-cam-an-kieng-hebekery-vi-khoai-lang-tim",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/biscotti-nguyen-cam-an-kieng-hebekery-vi-khoai-lang-tim",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/biscotti-nguyen-cam-an-kieng-vi-trai-cay-nhiet-doi-hebekery",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/biscotti-nguyen-cam-an-kieng-vi-trai-cay-nhiet-doi-hebekery",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/biscotti-nguyen-cam-an-kieng-vi-trai-cay-nhiet-doi-hebekery",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/biscotti-nguyen-cam-an-kieng-vi-trai-cay-nhiet-doi-hebekery",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/biscotti-nguyen-cam-an-kieng-vi-trai-cay-nhiet-doi-hebekery",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/bun-gao-lut-do-hebekery",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/bun-gao-lut-do-hebekery",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/bun-gao-lut-do-hebekery",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/bun-gao-lut-do-hebekery",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/bun-gao-lut-do-hebekery",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/granola-truly-healthy-hebekery",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/granola-truly-healthy-hebekery",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/granola-truly-healthy-hebekery",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/granola-truly-healthy-hebekery",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/granola-truly-healthy-hebekery",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/granola-truly-healthy-vi-chocolate-hebekery-by-hebe-ngu-coc-dinh-duong-lanh-manh-tu-nhien",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/granola-truly-healthy-vi-chocolate-hebekery-by-hebe-ngu-coc-dinh-duong-lanh-manh-tu-nhien",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/granola-truly-healthy-vi-chocolate-hebekery-by-hebe-ngu-coc-dinh-duong-lanh-manh-tu-nhien",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/granola-truly-healthy-vi-chocolate-hebekery-by-hebe-ngu-coc-dinh-duong-lanh-manh-tu-nhien",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/granola-truly-healthy-vi-chocolate-hebekery-by-hebe-ngu-coc-dinh-duong-lanh-manh-tu-nhien",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/hat-chia-organic-dk-harvest-nhap-khau-peru-or-giau-omega-3-ho-tro-giam-can-do-tinh-khiet-cao",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/hat-chia-organic-dk-harvest-nhap-khau-peru-or-giau-omega-3-ho-tro-giam-can-do-tinh-khiet-cao",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/hat-chia-organic-dk-harvest-nhap-khau-peru-or-giau-omega-3-ho-tro-giam-can-do-tinh-khiet-cao",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/hat-chia-organic-dk-harvest-nhap-khau-peru-or-giau-omega-3-ho-tro-giam-can-do-tinh-khiet-cao",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/hat-chia-organic-dk-harvest-nhap-khau-peru-or-giau-omega-3-ho-tro-giam-can-do-tinh-khiet-cao",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/hat-diem-mach-trang-dk-harvest-nhap-khau-peru",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/hat-diem-mach-trang-dk-harvest-nhap-khau-peru",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/hat-diem-mach-trang-dk-harvest-nhap-khau-peru",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/hat-diem-mach-trang-dk-harvest-nhap-khau-peru",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/hat-diem-mach-trang-dk-harvest-nhap-khau-peru",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/man-den-say-nhap-khau-chi-le",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/man-den-say-nhap-khau-chi-le",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/man-den-say-nhap-khau-chi-le",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/man-den-say-nhap-khau-chi-le",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/man-den-say-nhap-khau-chi-le",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/thanh-hat-muoi-hong-dinh-duong",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/thanh-hat-muoi-hong-dinh-duong",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/thanh-hat-muoi-hong-dinh-duong",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/thanh-hat-muoi-hong-dinh-duong",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/thanh-hat-muoi-hong-dinh-duong",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/tra-hoa-cuc-vang-say-kho-nguyen-bong",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/tra-hoa-cuc-vang-say-kho-nguyen-bong",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/tra-hoa-cuc-vang-say-kho-nguyen-bong",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/tra-hoa-cuc-vang-say-kho-nguyen-bong",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/tra-hoa-cuc-vang-say-kho-nguyen-bong",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/tra-tam-sen-dong-thap",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/tra-tam-sen-dong-thap",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/tra-tam-sen-dong-thap",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/tra-tam-sen-dong-thap",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/product/detail/tra-tam-sen-dong-thap",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/dichvu",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/dichvu",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/dichvu",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/dichvu",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/dichvu",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/giohang",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/giohang",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/giohang",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/giohang",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/giohang",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/taptheduc",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/taptheduc",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/taptheduc",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/taptheduc",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/taptheduc",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/users/681f91b7507b0980c99d4d0c",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/users/681f91b7507b0980c99d4d0c",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/users/681f91b7507b0980c99d4d0c",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/users/681f91b7507b0980c99d4d0c",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/users/681f91b7507b0980c99d4d0c",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/products/users/681f91b7507b0980c99d4d0c",
+        "evidence": "Found pattern 'password' in response body",
+        "finding_type": "sensitive_data_exposure",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/sanpham",
+        "evidence": "Header strict-transport-security is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/sanpham",
+        "evidence": "Header content-security-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/sanpham",
+        "evidence": "Header x-frame-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/sanpham",
+        "evidence": "Header x-content-type-options is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      },
+      {
+        "url": "http://localhost:3000/sanpham",
+        "evidence": "Header referrer-policy is missing",
+        "finding_type": "missing_header",
+        "matched_by": "none",
+        "rule": {
+          "ruleId": "UNMAPPED"
+        }
+      }
+    ]
+  }
+}

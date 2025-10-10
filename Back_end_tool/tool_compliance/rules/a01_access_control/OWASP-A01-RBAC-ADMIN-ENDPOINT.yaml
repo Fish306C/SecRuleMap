@@ -1,0 +1,13 @@
+ruleId: OWASP-A01-RBAC-ADMIN-ENDPOINT
+standard: "OWASP Top 10 2021 - A01: Broken Access Control"
+description: "Ensure the /admin endpoint is protected with role-based access control requiring 'admin' role."
+severity: "Critical"
+type: "endpoint_check"
+target:
+  path: "/admin"
+  method: "GET"
+assertion:
+  role: "admin"
+  condition: "required"
+rationale: "Without enforcing RBAC, regular users could access sensitive admin functions, leading to privilege escalation."
+remediation: "Implement RBAC checks in your access control middleware. Example: only allow requests with a valid 'admin' role claim in JWT or session."
