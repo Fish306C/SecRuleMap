@@ -31,7 +31,11 @@ $ docker-compose down
 ## Credentials
 * Wordpress: admin/admin
 * MySQL: root/password
-
+## ssh
+* ssh root@127.0.0.1 -p 2222
+* pass: 123456
+## lệnh chạy agent
+* python3 /root/agent.py
 ## Vulnerabilities
 
 Feel free to contribute with pull requests ;)
