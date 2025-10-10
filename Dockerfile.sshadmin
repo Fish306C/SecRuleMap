@@ -1,0 +1,4 @@
+FROM rastasheep/ubuntu-sshd:18.04
+
+# Đặt password root cố định
+RUN echo "root:123456" | chpasswd
