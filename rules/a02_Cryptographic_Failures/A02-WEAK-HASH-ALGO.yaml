@@ -1,0 +1,13 @@
+ruleId: OWASP-A02-WEAK-HASH-ALGO
+standard: "OWASP Top 10 2021 - A02: Cryptographic Failures"
+description: "Ensure no use of deprecated hash algorithms (MD5, SHA1) in digital signatures, certificates, or application code."
+severity: "High"
+type: "config_check"
+target:
+  file: "application_code|config"
+  directive: "hash_algorithm"
+assertion:
+  condition: "not_in_list"
+  value: ["MD5","SHA1"]
+rationale: "Weak hash algorithms are vulnerable to collision and preimage attacks, breaking integrity guarantees."
+remediation: "Use modern secure hashes such as SHA-256, SHA-384, or SHA-512 for integrity protection."

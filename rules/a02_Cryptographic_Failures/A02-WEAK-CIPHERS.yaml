@@ -1,0 +1,13 @@
+ruleId: OWASP-A02-WEAK-CIPHERS
+standard: "OWASP Top 10 2021 - A02: Cryptographic Failures"
+description: "Ensure weak or insecure cipher suites (e.g. RC4, 3DES, DES, aNULL, eNULL, MD5, EXPORT) are not allowed by the server."
+severity: "High"
+type: "config_check"
+target:
+  file: "nginx.conf|httpd.conf"
+  directive: "ssl_ciphers|SSLCipherSuite"
+assertion:
+  condition: "not_contains"
+  value: ["RC4","3DES","DES","aNULL","eNULL","MD5","EXPORT"]
+rationale: "Weak ciphers reduce the confidentiality and integrity of TLS connections and are susceptible to cryptographic attacks."
+remediation: "Use modern cipher suites following best-practice recommendations (e.g., AEAD ciphers like AES-GCM or ChaCha20-Poly1305). Refer to Mozilla or OWASP TLS guidance."

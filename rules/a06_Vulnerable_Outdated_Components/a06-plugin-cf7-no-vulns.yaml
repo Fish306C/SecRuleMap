@@ -1,0 +1,14 @@
+ruleId: OWASP-A06-2021-PLUGIN-CONTACTFORM7-NO-VULNS
+category: A06
+standard: OWASP Top 10 2021
+description: Ensure Contact Form 7 version has no publicly known High or Critical vulnerabilities.
+severity: High
+check: component_no_known_vulns
+target:
+  component_type: plugin
+  name: contact-form-7
+  version_source: auto
+assertion:
+  condition: no_known_vulns
+rationale: Form handlers face direct user input; High+ CVEs can lead to upload bypass or RCE.
+remediation: Upgrade Contact Form 7 to the latest stable version or temporarily disable submissions.

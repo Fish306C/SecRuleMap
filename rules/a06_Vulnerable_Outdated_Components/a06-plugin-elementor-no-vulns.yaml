@@ -1,0 +1,14 @@
+ruleId: OWASP-A06-2021-PLUGIN-ELEMENTOR-NO-VULNS
+category: A06
+standard: OWASP Top 10 2021
+description: Ensure Elementor plugin version has no publicly known Medium or higher severity vulnerabilities.
+severity: High
+check: component_no_known_vulns
+target:
+  component_type: plugin
+  name: elementor
+  version_source: auto
+assertion:
+  condition: no_known_vulns
+rationale: Elementor is widely deployed; CVEs on popular plugins are often exploited quickly.
+remediation: Upgrade Elementor to the latest stable version from WordPress.org or temporarily disable until a patched version is available.

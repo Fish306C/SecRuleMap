@@ -1,0 +1,14 @@
+ruleId: OWASP-A02-HSTS-MISSING
+standard: "OWASP Top 10 2021 - A02: Cryptographic Failures"
+description: "Ensure the Strict-Transport-Security (HSTS) header is present and configured with a reasonable max-age and includeSubDomains where appropriate."
+severity: "High"
+type: "header_check"
+target:
+  header: "Strict-Transport-Security"
+assertion:
+  condition: "contains_all"
+  value: ["max-age=","includeSubDomains"]
+  extra:
+    min_max_age_seconds: 31536000
+rationale: "HSTS enforces HTTPS, preventing protocol downgrade attacks and cookie hijacking."
+remediation: "Add header: 'Strict-Transport-Security: max-age=31536000; includeSubDomains; preload' (use preload only after careful testing)."

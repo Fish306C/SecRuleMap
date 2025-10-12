@@ -1,13 +1,14 @@
 ruleId: OWASP-A01-2021-DEFAULT-PERMS-ADMIN
-standard: "OWASP Top 10 2021 - A01: Broken Access Control"
-description: "Ensure default permissions for admin directories are not set to allow public access."
-severity: "High"
-type: "config_check"
+category: A01
+standard: OWASP Top 10 2021
+severity: high
+type: config_check
+check: admin
 target:
-  file: ".htaccess"
-  directive: "Require all granted"
+  file: .htaccess
+  directive: Require all granted
+signals: {}
 assertion:
-  condition: "not_exists"
-  path: "/admin/"
-rationale: "Default permissions allowing public access to admin directories can expose sensitive administrative functions to unauthorized users, leading to privilege escalation."
-remediation: "In your .htaccess file, restrict access to admin directories. Example: '<Directory /admin> Require ip 127.0.0.1 </Directory>' or use authentication modules."
+  condition: not_exists
+  value: /admin/
+description: Ensure default permissions for admin directories are not set to allow public access. Rationale: Default permissions allowing public access to admin directories can expose sensitive administrative functions to unauthorized users, leading to privilege escalation. Remediation: In your .htaccess file, restrict access to admin directories. Example: '<Directory /admin> Require ip 127.0.0.1 </Directory>' or use authentication modules.

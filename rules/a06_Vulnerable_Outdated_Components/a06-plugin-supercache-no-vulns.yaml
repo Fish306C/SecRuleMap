@@ -1,0 +1,14 @@
+ruleId: OWASP-A06-2021-PLUGIN-SUPERCACHE-NO-VULNS
+category: A06
+standard: OWASP Top 10 2021
+description: Ensure WP Super Cache version has no publicly known Medium or higher vulnerabilities.
+severity: Medium
+check: component_no_known_vulns
+target:
+  component_type: plugin
+  name: wp-super-cache
+  version_source: auto
+assertion:
+  condition: no_known_vulns
+rationale: Caching layer bugs can enable cache poisoning or privilege confusion across users.
+remediation: Update WP Super Cache to the latest stable version; purge cache after upgrade.

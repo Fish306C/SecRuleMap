@@ -1,13 +1,14 @@
 ruleId: OWASP-A01-DIRECTORY-LISTING
-standard: "OWASP Top 10 2021 - A01: Broken Access Control"
-description: "Ensure directory listing is disabled to prevent unauthorized access to sensitive files."
-severity: "High"
-type: "config_check"
+category: A01
+standard: OWASP Top 10 2021
+severity: high
+type: config_check
+check: listing
 target:
-  file: "nginx.conf"
-  directive: "autoindex"
+  file: nginx.conf
+  directive: autoindex
+signals: {}
 assertion:
-  value: "off"
-  condition: "equals"
-rationale: "Directory listing can expose sensitive files (backups, configs, source code) to attackers if enabled."
-remediation: "In your nginx.conf (or site config), set 'autoindex off;' inside the server/location block."
+  condition: equals
+  value: 'off'
+description: Ensure directory listing is disabled to prevent unauthorized access to sensitive files. Rationale: Directory listing can expose sensitive files (backups, configs, source code) to attackers if enabled. Remediation: In your nginx.conf (or site config), set 'autoindex off;' inside the server/location block.

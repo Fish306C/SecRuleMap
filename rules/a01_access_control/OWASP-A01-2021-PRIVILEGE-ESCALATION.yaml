@@ -1,12 +1,10 @@
 ruleId: OWASP-A01-2021-PRIVILEGE-ESCALATION
-standard: "OWASP Top 10 2021 - A01: Broken Access Control"
-description: "Ensure API responses do not expose excessive privileges by checking for role-based authorization headers."
-severity: "High"
-type: "header_check"
+category: A01
+severity: high
+type: api_check
+check: privilege_escalation
 target:
-  header: "X-API-Role"  # Custom or standard authorization header
-assertion:
-  value: "admin"  # Or higher privilege
-  condition: "not_equals_for_non_admin"  # Conditional based on user context
-rationale: "Missing role checks in APIs can allow vertical privilege escalation, where low-privilege users access admin functions, resulting in unauthorized modifications."
-remediation: "Enforce role-based access control (RBAC) server-side. Add checks like 'if user.role != \"admin\": return 403' and avoid exposing roles in headers unless necessary."
+  endpoint: /api/admin/reports
+signals:
+  required_role: admin
+description: "Low-priv user can access admin-only endpoint."

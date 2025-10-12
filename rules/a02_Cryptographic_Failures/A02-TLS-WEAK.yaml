@@ -1,0 +1,13 @@
+ruleId: OWASP-A02-TLS-WEAK
+standard: "OWASP Top 10 2021 - A02: Cryptographic Failures"
+description: "Ensure the web server does not support deprecated or weak SSL/TLS protocol versions (e.g. SSLv2, SSLv3, TLSv1.0, TLSv1.1)."
+severity: "High"
+type: "config_check"
+target:
+  file: "nginx.conf|httpd.conf"
+  directive: "ssl_protocols|SSLProtocol"
+assertion:
+  condition: "equals_or_superset"
+  value: ["TLSv1.2","TLSv1.3"]
+rationale: "Old protocol versions contain known vulnerabilities (e.g., POODLE, BEAST) and should be disabled."
+remediation: "Allow only TLSv1.2 and TLSv1.3. Example: Nginx: 'ssl_protocols TLSv1.2 TLSv1.3;'; Apache: 'SSLProtocol -all +TLSv1.2 +TLSv1.3'."

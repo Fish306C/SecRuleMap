@@ -1,0 +1,14 @@
+ruleId: OWASP-A06-2021-COMPONENT-DUPLICATE-VERSIONS
+category: A06
+standard: OWASP Top 10 2021
+description: Ensure no multiple copies of the same plugin/theme with different versions exist in the filesystem.
+severity: Medium
+check: component_duplicate_versions
+target:
+  component_type: any
+  version_source: auto
+assertion:
+  condition: equals
+  value: 0
+rationale: Multiple versions create ambiguity in loading order and raise the risk of activating a vulnerable copy.
+remediation: Remove older duplicates, keep only the intended version under wp-content/plugins/ or wp-content/themes/.

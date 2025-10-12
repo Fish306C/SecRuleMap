@@ -1,12 +1,16 @@
 ruleId: OWASP-A01-2021-IDOR-API
-standard: "OWASP Top 10 2021 - A01: Broken Access Control"
-description: "Ensure API endpoints for user data require user-specific authorization to prevent Insecure Direct Object References (IDOR)."
-severity: "Critical"
-type: "api_check"
+category: A01
+standard: OWASP Top 10 2021
+severity: high
+type: api_check
+check: idor
 target:
-  endpoint: "/api/users/{id}"
+  endpoint: /api/users/{id}
+  method: GET
+signals:
+  id_param_hint: auto
+  ownership_key: userId
 assertion:
-  condition: "requires_auth"
-  value: "user_id_match"
-rationale: "Without proper authorization checks, attackers can manipulate object references (e.g., user IDs) to access or modify data belonging to other users, resulting in data breaches."
-remediation: "Implement server-side checks to ensure the requesting user's ID matches the resource ID in the endpoint. Example in code: if (request.user.id !== params.id) { return 403; }"
+  condition: requires_auth
+  value: user_id_match
+description: Detect IDOR on user profile endpoint.

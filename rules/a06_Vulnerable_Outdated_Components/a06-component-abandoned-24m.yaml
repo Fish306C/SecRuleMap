@@ -1,0 +1,14 @@
+ruleId: OWASP-A06-2021-COMPONENT-ABANDONED-24M
+category: A06
+standard: OWASP Top 10 2021
+description: Flag components that have seen no updates for more than 24 months.
+severity: High
+check: component_abandoned
+target:
+  component_type: any
+  version_source: auto
+assertion:
+  condition: lte
+  value: 730
+rationale: Abandoned components are unlikely to receive security patches, increasing long-term risk.
+remediation: Replace abandoned components with actively maintained alternatives or fork and maintain internally.
