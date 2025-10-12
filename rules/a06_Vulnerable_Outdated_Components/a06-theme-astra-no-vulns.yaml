@@ -1,13 +1,14 @@
 ruleId: OWASP-A06-2021-THEME-ASTRA-NO-VULNS
-standard: "OWASP Top 10 2021 - A06: Vulnerable and Outdated Components"
-description: "Verify the Astra theme version is free of publicly known Medium or higher vulnerabilities."
-severity: "Medium"
-type: "component_vuln"
+category: A06
+standard: OWASP Top 10 2021
+description: Verify the Astra theme version is free of publicly known Medium or higher vulnerabilities.
+severity: Medium
+check: component_no_known_vulns
 target:
-  component_type: "theme"
-  name: "astra"
-  version_source: "auto"
+  component_type: theme
+  name: astra
+  version_source: auto
 assertion:
-  condition: "no_known_vulns"
-rationale: "Widely used base themes affect many sites; keeping Astra patched minimizes risk."
-remediation: "Update Astra to the latest stable version from the vendor/WordPress.org."
+  condition: no_known_vulns
+rationale: Widely used base themes affect many sites; keeping Astra patched minimizes risk.
+remediation: Update Astra to the latest stable version from the vendor/WordPress.org.

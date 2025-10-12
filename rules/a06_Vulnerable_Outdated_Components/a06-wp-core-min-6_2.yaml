@@ -1,15 +1,16 @@
 ruleId: OWASP-A06-2021-WP-CORE-MIN-6_2
-standard: "OWASP Top 10 2021 - A06: Vulnerable and Outdated Components"
-description: "Ensure the WordPress core version is 6.2 or higher. Older versions may contain unpatched security issues."
-severity: "Medium"
-type: "component_hygiene"
+category: A06
+standard: OWASP Top 10 2021
+description: Ensure the WordPress core version is 6.2 or higher. Older versions may contain unpatched security issues.
+severity: Medium
+check: component_min_version
 target:
-  component_type: "core"
-  name: "wordpress"
-  version_source: "auto"
+  component_type: core
+  name: wordpress
+  version_source: auto
 assertion:
-  condition: "gte"
-  field: "version"
-  value: "6.2"
-rationale: "Setting a minimum baseline version reduces exposure to older vulnerabilities and ensures long-term support."
-remediation: "Upgrade WordPress core to at least version 6.2 or later stable releases."
+  condition: gte
+  field: version
+  value: 6.2
+rationale: Setting a minimum baseline version reduces exposure to older vulnerabilities and ensures long-term support.
+remediation: Upgrade WordPress core to at least version 6.2 or later stable releases.

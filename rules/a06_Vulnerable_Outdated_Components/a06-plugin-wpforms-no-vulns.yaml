@@ -1,13 +1,14 @@
 ruleId: OWASP-A06-2021-PLUGIN-WPFORMS-NO-VULNS
-standard: "OWASP Top 10 2021 - A06: Vulnerable and Outdated Components"
-description: "Validate that the WPForms plugin version is free of publicly known Medium or higher vulnerabilities."
-severity: "High"
-type: "component_vuln"
+category: A06
+standard: OWASP Top 10 2021
+description: Validate WPForms plugin version is free of publicly known Medium or higher vulnerabilities.
+severity: High
+check: component_no_known_vulns
 target:
-  component_type: "plugin"
-  name: "wpforms"
-  version_source: "auto"
+  component_type: plugin
+  name: wpforms
+  version_source: auto
 assertion:
-  condition: "no_known_vulns"
-rationale: "Form builders process untrusted input; security issues may lead to CSRF or data leakage."
-remediation: "Update WPForms to the latest stable version or disable form endpoints temporarily."
+  condition: no_known_vulns
+rationale: Form builders process untrusted input; security issues may lead to CSRF or data leakage.
+remediation: Update WPForms to the latest stable version or disable form endpoints temporarily.

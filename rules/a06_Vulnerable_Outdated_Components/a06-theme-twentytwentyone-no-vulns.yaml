@@ -1,13 +1,14 @@
 ruleId: OWASP-A06-2021-THEME-TWENTYTWENTYONE-NO-VULNS
-standard: "OWASP Top 10 2021 - A06: Vulnerable and Outdated Components"
-description: "Confirm that the Twenty Twenty-One theme (twentytwentyone) has no publicly known Medium or higher vulnerabilities."
-severity: "Medium"
-type: "component_vuln"
+category: A06
+standard: OWASP Top 10 2021
+description: Confirm that the Twenty Twenty-One theme (twentytwentyone) has no publicly known Medium or higher vulnerabilities.
+severity: Medium
+check: component_no_known_vulns
 target:
-  component_type: "theme"
-  name: "twentytwentyone"
-  version_source: "auto"
+  component_type: theme
+  name: twentytwentyone
+  version_source: auto
 assertion:
-  condition: "no_known_vulns"
-rationale: "Default themes are ubiquitous; known issues can be chained with other weaknesses."
-remediation: "Update the Twenty Twenty-One theme to the latest available version."
+  condition: no_known_vulns
+rationale: Default themes are ubiquitous; known issues can be chained with other weaknesses.
+remediation: Update the Twenty Twenty-One theme to the latest available version.
