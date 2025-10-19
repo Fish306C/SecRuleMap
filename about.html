@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About & Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #1e3a8a;
+      margin-bottom: 1rem;
+    }
+    .contact-input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.5rem;
+      outline: none;
+      transition: box-shadow 0.2s ease;
+    }
+    .contact-input:focus {
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.4);
+      border-color: #3b82f6;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen overflow-y-auto">
+
+  <!-- Header -->
+  <div id="header"></div>
+
+  <main class="flex-grow container mx-auto px-6 py-10 max-w-5xl">
+    
+    <!-- Introduction -->
+   
+
+    <!-- Team Information -->
+    <section class="mb-12 bg-white shadow-lg rounded-2xl p-8 border border-gray-200">
+      <h2 class="section-title">Team Information</h2>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-lg font-semibold text-blue-700 mb-2">Team Name:</h3>
+          <p class="text-gray-700 mb-4">IA06</p>
+
+          <h3 class="text-lg font-semibold text-blue-700 mb-2">Supervisor:</h3>
+          <p class="text-gray-700 mb-4">Dr. Nguyen Gia Tri</p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold text-blue-700 mb-2">Team Members:</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Huynh Thi Thanh Nguyet (Team Leader)</li>
+            <li>Lam Dan Huy</li>
+            <li>Nguyen Vinh Tu</li>
+            <li>Le Hoang Minh</li>
+            <li>Tran Anh Khoa</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Mission -->
+    <section class="mb-12 bg-white shadow-lg rounded-2xl p-8 border border-gray-200">
+      <h2 class="section-title">Project Goals and Mission</h2>
+      <p class="text-gray-700 mb-3">
+        The project aims to provide a security evaluation and monitoring system for web applications based on artificial intelligence.
+        It allows users to analyze configuration files, detect security issues, and receive recommendations for improvements.
+      </p>
+      <p class="text-gray-700">
+        Our mission is to make web security accessible, automated, and effective for everyone.
+        The system is designed to integrate seamlessly into existing workflows while maintaining high accuracy and performance.
+      </p>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="bg-white shadow-lg rounded-2xl p-8 border border-gray-200">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="text-gray-700 mb-4">If you have questions or feedback, please send us a message using the form below.</p>
+
+      <form class="space-y-4" onsubmit="submitForm(event)">
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Your Name</label>
+          <input type="text" id="name" class="contact-input" placeholder="Enter your name" required>
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Email</label>
+          <input type="email" id="email" class="contact-input" placeholder="you@example.com" required>
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Message</label>
+          <textarea id="message" rows="5" class="contact-input" placeholder="Write your message..." required></textarea>
+        </div>
+
+        <button type="submit"
+          class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition shadow-md hover:shadow-lg">
+          Send Message
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <script>
+    // Load header2.html and footer.html dynamically
+    Promise.all([
+      fetch("header2.html").then(res => res.text()),
+      fetch("footer.html").then(res => res.text())
+    ]).then(([header, footer]) => {
+      document.getElementById("header").innerHTML = header;
+      document.getElementById("footer").innerHTML = footer;
+    });
+
+    // Handle contact form submission
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you for contacting us. Your message has been sent successfully.");
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>

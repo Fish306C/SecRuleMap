@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAQT - Security Audit Scanning Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        header {
+            z-index: 1000; /* Ensure header is above other content */
+            position: relative;
+        }
+        nav a {
+            pointer-events: auto !important; /* Ensure links are clickable */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-300">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                
+                <div class="flex flex-col items-start space-y-1">
+                    <img src="./logo.png" 
+                         alt="SAQT Logo" 
+                         class="h-11 w-auto" />
+                    <p class="text-[8px] text-white font-semibold tracking-widest leading-none ml-[-7px]">
+                        SECURITY AUDIT SCANNING TOOL
+                    </p>
+                </div>
+
+                <!-- Navigation Menu -->
+                <ul class="hidden lg:flex items-center space-x-10 text-white text-base font-semibold">
+                    <li><a href="#" class="hover:text-cyan-100 transition duration-200">Home</a></li>
+                    <li><a href="#" class="hover:text-cyan-100 transition duration-200">About</a></li>
+                    <li><a href="#" class="hover:text-cyan-100 transition duration-200">Dashboard</a></li>
+                    <li><a href="#" class="hover:text-cyan-100 transition duration-200">Standards</a></li>
+                    <li><a href="#" class="hover:text-cyan-100 transition duration-200">Contact</a></li>
+                </ul>
+
+                <!-- Login/Register Button -->
+                <div class="hidden lg:block">
+                    <a href="/login.html" class="border-2 border-white text-white px-8 py-2.5 rounded-full hover:bg-white hover:text-blue-600 transition duration-300 font-semibold text-sm" style="pointer-events: auto;">
+                        Login/ Register
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-white">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

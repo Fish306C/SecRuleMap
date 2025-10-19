@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy & Terms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .section-title {
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .section-title:hover {
+            color: #0ea5e9;
+        }
+
+        .active-title {
+            color: #0284c7;
+            font-weight: 700;
+        }
+
+        .section-content {
+            display: none;
+            margin-top: 0.5rem;
+            color: #374151;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen overflow-y-auto">
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <main class="flex-grow container mx-auto px-6 py-10 max-w-4xl">
+        <h1 class="text-3xl font-bold text-center text-gray-900 mb-10">Privacy Policy & Terms</h1>
+
+        <!-- Privacy Policy -->
+        <div class="mb-6 border-b border-gray-300 pb-4">
+            <h2 class="text-xl font-semibold section-title" onclick="toggleSection('privacy')">1. Privacy and Data Usage Policy</h2>
+            <div id="privacy" class="section-content">
+                <p class="mt-3">
+                    We respect your privacy and are committed to protecting your personal data. 
+                    All uploaded configuration files and scan results are processed securely and are not shared with third parties.
+                </p>
+                <p class="mt-2">
+                    We collect minimal data necessary for system functionality and improvement, including anonymized statistics and security patterns.
+                </p>
+                <p class="mt-2">
+                    Users can request data deletion or modification at any time through their account settings.
+                </p>
+            </div>
+        </div>
+
+        <!-- Terms of Service -->
+        <div class="mb-6 border-b border-gray-300 pb-4">
+            <h2 class="text-xl font-semibold section-title" onclick="toggleSection('terms')">2. Terms of Service</h2>
+            <div id="terms" class="section-content">
+                <p class="mt-3">
+                    By using our system, you agree to comply with all applicable security and data protection laws. 
+                    You may not use the platform for malicious activities or unauthorized scanning.
+                </p>
+                <p class="mt-2">
+                    The service is provided “as is,” without any warranty or liability for damages caused by misuse or third-party interference.
+                </p>
+            </div>
+        </div>
+
+        <!-- User Rights -->
+        <div class="mb-6 border-b border-gray-300 pb-4">
+            <h2 class="text-xl font-semibold section-title" onclick="toggleSection('rights')">3. User Rights and Responsibilities</h2>
+            <div id="rights" class="section-content">
+                <p class="mt-3">
+                    Users have the right to access, export, and delete their scan data at any time. 
+                    We maintain transparency regarding all collected information.
+                </p>
+                <p class="mt-2">
+                    Users are responsible for ensuring uploaded configurations do not contain sensitive or unauthorized data.
+                </p>
+                <p class="mt-2">
+                    Violations of these policies may result in suspension or permanent account termination.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script>
+        // Load header and footer dynamically
+        Promise.all([
+            fetch("header2.html").then(res => res.text()),
+            fetch("footer.html").then(res => res.text())
+        ]).then(([header, footer]) => {
+            document.getElementById("header").innerHTML = header;
+            document.getElementById("footer").innerHTML = footer;
+        });
+
+        // Toggle visibility of sections
+        function toggleSection(id) {
+            const content = document.getElementById(id);
+            const title = content.previousElementSibling;
+
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                title.classList.add("active-title");
+            } else {
+                content.style.display = "none";
+                title.classList.remove("active-title");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scan History</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      overflow-y: scroll; /* Thanh cuộn dọc */
+      background-color: #f9fafb;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Nội dung chính -->
+  <main class="flex-grow p-4 md:p-8">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Tiêu đề -->
+      <div class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-2">Scan History</h1>
+        <p class="text-gray-600 text-sm">Keep a record of all previous scans. Search, filter, view details, or delete.</p>
+      </div>
+
+      <!-- Filter Section -->
+      <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 items-end">
+          <!-- Search -->
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Search (Name or URL)</label>
+            <input type="text" placeholder="e.g. homepage audit or https://example..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          </div>
+
+          <!-- Date From -->
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Date from</label>
+            <input type="date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          </div>
+
+          <!-- Date To -->
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Date to</label>
+            <input type="date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          </div>
+
+          <!-- Severity -->
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Severity</label>
+            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <option>All Severities</option>
+              <option>Low</option>
+              <option>Medium</option>
+              <option>High</option>
+              <option>Critical</option>
+            </select>
+          </div>
+
+          <!-- Rule Type -->
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Rule type</label>
+            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <option>All Rule Types</option>
+              <option>OWASP</option>
+              <option>PCI DSS</option>
+              <option>Custom</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Reset Button -->
+        <div class="flex justify-end mt-4">
+          <button class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+            Reset
+          </button>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead>
+              <tr class="bg-blue-600 text-white">
+                <th class="px-4 py-3 text-left font-semibold">SCAN</th>
+                <th class="px-4 py-3 text-left font-semibold">DATE</th>
+                <th class="px-4 py-3 text-left font-semibold">URL</th>
+                <th class="px-4 py-3 text-left font-semibold">STATUS</th>
+                <th class="px-4 py-3 text-left font-semibold">SCORE</th>
+                <th class="px-4 py-3 text-left font-semibold">SEVERITY</th>
+                <th class="px-4 py-3 text-left font-semibold">RULE TYPE</th>
+                <th class="px-4 py-3 text-left font-semibold">ACTIONS</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              
+              <!-- Row 1 -->
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4">
+                  <div class="font-semibold text-blue-600">Homepage Post-Update</div>
+                  <div class="text-xs text-gray-500">https://example.com</div>
+                </td>
+                <td class="px-4 py-4 text-gray-700">10/10/2025</td>
+                <td class="px-4 py-4 text-gray-600 text-sm">https://example.com</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
+                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                    Completed
+                  </span>
+                </td>
+                <td class="px-4 py-4">
+                  <div class="flex items-center gap-2">
+                    <div class="flex-1 bg-gray-200 rounded-full h-2 max-w-[100px]">
+                      <div class="bg-blue-500 h-2 rounded-full" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-4 py-4 text-sm text-gray-700">Low</td>
+                <td class="px-4 py-4 text-sm text-gray-700">OWASP</td>
+                <td class="px-4 py-4">
+                  <div class="flex gap-2">
+                    <button class="bg-blue-900 text-white px-4 py-1.5 rounded text-sm font-semibold hover:bg-blue-800">View Details</button>
+                    <button class="border border-gray-300 text-gray-700 px-4 py-1.5 rounded text-sm font-semibold hover:bg-gray-50">Delete</button>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 2 -->
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4">
+                  <div class="font-semibold text-blue-600">Blog Audit</div>
+                  <div class="text-xs text-gray-500">https://blog.example.com</div>
+                </td>
+                <td class="px-4 py-4 text-gray-700">12/10/2025</td>
+                <td class="px-4 py-4 text-gray-600 text-sm">https://blog.example.com</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-1 bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-semibold">
+                    <span class="w-2 h-2 bg-red-500 rounded-full"></span>
+                    Failed
+                  </span>
+                </td>
+                <td class="px-4 py-4">
+                  <div class="flex items-center gap-2">
+                    <div class="flex-1 bg-gray-200 rounded-full h-2 max-w-[100px]">
+                      <div class="bg-blue-500 h-2 rounded-full" style="width: 45%"></div>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-4 py-4 text-sm text-gray-700">High</td>
+                <td class="px-4 py-4 text-sm text-gray-700">OWASP</td>
+                <td class="px-4 py-4">
+                  <div class="flex gap-2">
+                    <button class="bg-blue-900 text-white px-4 py-1.5 rounded text-sm font-semibold hover:bg-blue-800">View Details</button>
+                    <button class="border border-gray-300 text-gray-700 px-4 py-1.5 rounded text-sm font-semibold hover:bg-gray-50">Delete</button>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 3 -->
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4">
+                  <div class="font-semibold text-blue-600">Admin Panel</div>
+                  <div class="text-xs text-gray-500">https://admin.example.com</div>
+                </td>
+                <td class="px-4 py-4 text-gray-700">15/10/2025</td>
+                <td class="px-4 py-4 text-gray-600 text-sm">https://admin.example.com</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-1 bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold">
+                    <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                    Running
+                  </span>
+                </td>
+                <td class="px-4 py-4">
+                  <div class="flex items-center gap-2">
+                    <div class="flex-1 bg-gray-200 rounded-full h-2 max-w-[100px]">
+                      <div class="bg-blue-500 h-2 rounded-full" style="width: 65%"></div>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-4 py-4 text-sm text-gray-700">Medium</td>
+                <td class="px-4 py-4 text-sm text-gray-700">OWASP</td>
+                <td class="px-4 py-4">
+                  <div class="flex gap-2">
+                    <button class="bg-blue-900 text-white px-4 py-1.5 rounded text-sm font-semibold hover:bg-blue-800">View Details</button>
+                    <button class="border border-gray-300 text-gray-700 px-4 py-1.5 rounded text-sm font-semibold hover:bg-gray-50">Delete</button>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Script tải header và footer -->
+  <script>
+    // Load header2 và footer vào trang
+    function loadHTML(id, url) {
+      fetch(url)
+        .then(response => response.text())
+        .then(data => document.getElementById(id).innerHTML = data)
+        .catch(err => console.error('Error loading ' + url, err));
+    }
+
+    loadHTML("header", "header2.html");
+    loadHTML("footer", "footer.html");
+
+    // Xử lý các nút chức năng
+    document.addEventListener("click", (event) => {
+      if (event.target.textContent.trim() === "Delete") {
+        if (confirm("Are you sure you want to delete this scan?")) {
+          event.target.closest("tr").remove();
+        }
+      } else if (event.target.textContent.trim() === "View Details") {
+        alert("Opening scan details...");
+      } else if (event.target.textContent.trim() === "Reset") {
+        document.querySelectorAll("input, select").forEach(el => el.value = "");
+      }
+    });
+  </script>
+
+</body>
+</html>

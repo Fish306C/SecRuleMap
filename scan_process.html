@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Progress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }
+        .shimmer {
+            background: linear-gradient(90deg, #06b6d4 0%, #0ea5e9 50%, #06b6d4 100%);
+            background-size: 1000px 100%;
+            animation: shimmer 2s infinite;
+        }
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 1; }
+        }
+        .pulse-dot {
+            animation: pulse-dot 1.5s ease-in-out infinite;
+        }
+        body {
+            overflow-y: auto; /* ✅ Cho phép cuộn dọc */
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 to-cyan-50 min-h-screen flex flex-col">
+
+    <!-- ✅ HEADER gọi từ file ngoài -->
+    <div id="header-container"></div>
+
+    <!-- ✅ MAIN CONTENT -->
+    <main class="flex-grow flex items-center justify-center p-6">
+        <div class="max-w-2xl w-full">
+            
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">Scan Progress</h1>
+                
+                <!-- Progress Bar -->
+                <div class="mb-2">
+                    <div class="text-sm font-semibold text-gray-700 mb-2">55% completed</div>
+                    <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                        <div class="shimmer h-full rounded-full transition-all duration-500" style="width: 55%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Current Status Card -->
+            <div class="bg-white border-2 border-cyan-300 rounded-2xl p-8 shadow-lg mb-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Current Status</h2>
+                
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2 text-gray-600">
+                        <span class="w-1.5 h-1.5 bg-cyan-500 rounded-full pulse-dot"></span>
+                        <span>Checking connection...</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-600">
+                        <span class="w-1.5 h-1.5 bg-cyan-500 rounded-full pulse-dot" style="animation-delay: 0.3s"></span>
+                        <span>Analyzing configuration...</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stop Scan Button -->
+            <div class="text-center">
+                <button 
+                    onclick="stopScan()"
+                    class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition shadow-lg hover:shadow-xl transform hover:scale-105"
+                >
+                    Stop Scan
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- ✅ FOOTER gọi từ file ngoài -->
+    <div id="footer-container"></div>
+
+    <!-- ✅ SCRIPT load header/footer -->
+    <script>
+        function loadHTML(file, elementId) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Error loading HTML:', error));
+        }
+
+        // ✅ Gọi header2 & footer ngoài
+        loadHTML('header2.html', 'header-container');
+        loadHTML('footer.html', 'footer-container');
+    </script>
+
+    <!-- ✅ SCRIPT Scan -->
+    <script>
+        let progress = 55;
+        let statusMessages = [
+            'Checking connection...',
+            'Analyzing configuration...',
+            'Scanning vulnerabilities...',
+            'Testing security headers...',
+            'Checking SSL/TLS...',
+            'Analyzing response codes...',
+            'Testing for XSS vulnerabilities...',
+            'Checking CORS policies...',
+            'Finalizing report...'
+        ];
+        let currentStatusIndex = 0;
+
+        // Simulate progress
+        setInterval(() => {
+            if (progress < 100) {
+                progress += Math.random() * 5;
+                if (progress > 100) progress = 100;
+                
+                const progressBar = document.querySelector('.shimmer');
+                progressBar.style.width = progress + '%';
+                
+                document.querySelector('.text-sm.font-semibold').textContent = Math.floor(progress) + '% completed';
+                
+                if (Math.random() > 0.7 && currentStatusIndex < statusMessages.length - 1) {
+                    currentStatusIndex++;
+                    updateStatus();
+                }
+                
+                if (progress >= 100) {
+                    showCompleted();
+                }
+            }
+        }, 1000);
+
+        function updateStatus() {
+            const statusContainer = document.querySelector('.space-y-3');
+            const statuses = [];
+            
+            for (let i = Math.max(0, currentStatusIndex - 1); i <= currentStatusIndex && i < statusMessages.length; i++) {
+                statuses.push(`
+                    <div class="flex items-center gap-2 text-gray-600">
+                        <span class="w-1.5 h-1.5 bg-cyan-500 rounded-full pulse-dot" style="animation-delay: ${i * 0.3}s"></span>
+                        <span>${statusMessages[i]}</span>
+                    </div>
+                `);
+            }
+            statusContainer.innerHTML = statuses.join('');
+        }
+
+        function showCompleted() {
+            const statusCard = document.querySelector('.border-cyan-300');
+            statusCard.classList.replace('border-cyan-300', 'border-green-300');
+            
+            const statusContainer = document.querySelector('.space-y-3');
+            statusContainer.innerHTML = `
+                <div class="flex items-center gap-2 text-green-600 font-semibold">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Scan completed successfully!</span>
+                </div>
+            `;
+            
+            const button = document.querySelector('button');
+            button.textContent = 'View Report';
+            button.classList.replace('bg-blue-600', 'bg-green-600');
+            button.classList.replace('hover:bg-blue-700', 'hover:bg-green-700');
+            button.onclick = () => window.location.href = 'report.html';
+        }
+
+        function stopScan() {
+            if (confirm('Are you sure you want to stop the scan?')) {
+                progress = 100;
+                document.querySelector('.shimmer').style.width = '0%';
+                document.querySelector('.text-sm.font-semibold').textContent = 'Scan stopped';
+                
+                const statusContainer = document.querySelector('.space-y-3');
+                statusContainer.innerHTML = `
+                    <div class="flex items-center gap-2 text-red-600 font-semibold">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Scan has been stopped</span>
+                    </div>
+                `;
+                
+                const button = document.querySelector('button');
+                button.textContent = 'Back to Dashboard';
+                button.onclick = () => window.location.href = 'dashboard.html';
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Scans - SAQT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-50 min-h-screen overflow-y-scroll">
+
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <main class="container mx-auto py-12 px-8 space-y-12">
+
+        <!-- Title -->
+        <h1 class="text-3xl font-bold text-gray-800 text-center mb-6">
+             Compare Two Scans
+        </h1>
+
+        <!-- Select Two Scans -->
+        <div class="bg-white shadow-md rounded-2xl p-6">
+            <h2 class="text-xl font-semibold mb-4">Select Two Scans to Compare</h2>
+            <div class="flex flex-col md:flex-row items-center gap-6">
+                <div class="flex flex-col w-full md:w-1/2">
+                    <label for="scan1" class="text-gray-700 font-medium mb-2">Scan 1:</label>
+                    <select id="scan1" class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400">
+                        <option value="">-- Select Scan --</option>
+                        <option value="Scan A">Scan #1 - 10/09/2025</option>
+                        <option value="Scan B">Scan #2 - 20/09/2025</option>
+                        <option value="Scan C">Scan #3 - 05/10/2025</option>
+                    </select>
+                </div>
+
+                <div class="flex flex-col w-full md:w-1/2">
+                    <label for="scan2" class="text-gray-700 font-medium mb-2">Scan 2:</label>
+                    <select id="scan2" class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400">
+                        <option value="">-- Select Scan --</option>
+                        <option value="Scan A">Scan #1 - 10/09/2025</option>
+                        <option value="Scan B">Scan #2 - 20/09/2025</option>
+                        <option value="Scan C">Scan #3 - 05/10/2025</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="text-center mt-6">
+                <button onclick="compareScans()" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-2 rounded-full shadow-md transition">
+                    Compare Scans
+                </button>
+            </div>
+        </div>
+
+        <!-- Comparison Table -->
+        <div id="comparison-result" class="hidden bg-white shadow-md rounded-2xl p-6 mt-8">
+            <h2 class="text-xl font-semibold mb-4 text-gray-800">Comparison Result</h2>
+            
+            <table class="w-full border border-gray-200 text-left">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="px-4 py-2 border-b">Category</th>
+                        <th class="px-4 py-2 border-b">Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="px-4 py-2 border-b font-medium text-blue-600">New Issues Found</td>
+                        <td class="px-4 py-2 border-b" id="new-issues">—</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border-b font-medium text-green-600">Fixed Issues</td>
+                        <td class="px-4 py-2 border-b" id="fixed-issues">—</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border-b font-medium text-yellow-600">Security Score Change</td>
+                        <td class="px-4 py-2 border-b" id="score-change">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Before & After Chart -->
+        <div id="chart-container" class="hidden bg-white shadow-md rounded-2xl p-6">
+            <h2 class="text-xl font-semibold mb-4 text-gray-800">Before & After Security Score</h2>
+            <canvas id="compareChart" height="100"></canvas>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Gọi file header2 và footer
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("header2.html")
+                .then(res => res.text())
+                .then(html => document.getElementById("header-container").innerHTML = html);
+
+            fetch("footer.html")
+                .then(res => res.text())
+                .then(html => document.getElementById("footer-container").innerHTML = html);
+        });
+
+        // Hàm so sánh hai bản scan
+        function compareScans() {
+            const scan1 = document.getElementById("scan1").value;
+            const scan2 = document.getElementById("scan2").value;
+
+            if (!scan1 || !scan2 || scan1 === scan2) {
+                alert("⚠️ Please select two different scans to compare!");
+                return;
+            }
+
+            // Giả lập dữ liệu so sánh
+            const newIssues = Math.floor(Math.random() * 5) + 1;
+            const fixedIssues = Math.floor(Math.random() * 5) + 1;
+            const oldScore = Math.floor(Math.random() * 60) + 20;
+            const newScore = oldScore + Math.floor(Math.random() * 20);
+
+            document.getElementById("comparison-result").classList.remove("hidden");
+            document.getElementById("chart-container").classList.remove("hidden");
+
+            document.getElementById("new-issues").textContent = `${newIssues} new issues detected`;
+            document.getElementById("fixed-issues").textContent = `${fixedIssues} issues resolved`;
+            document.getElementById("score-change").textContent = `${oldScore} → ${newScore} (+${newScore - oldScore})`;
+
+            // Render biểu đồ Before & After
+            const ctx = document.getElementById("compareChart").getContext("2d");
+            new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: ["Before", "After"],
+                    datasets: [{
+                        label: "Security Score",
+                        data: [oldScore, newScore],
+                        backgroundColor: ["#f87171", "#34d399"],
+                        borderRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: { beginAtZero: true, max: 100 }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

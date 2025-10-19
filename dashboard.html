@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Scan Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            overflow-y: scroll; /* Thanh cuộn dọc */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Nội dung chính -->
+    <main class="flex-1 p-8">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
+            <!-- Header -->
+            <h2 class="text-2xl font-bold mb-6">Overview</h2>
+            
+            <!-- Stats Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <div class="bg-blue-100 rounded-lg p-6 text-center">
+                    <div class="text-4xl font-bold text-blue-600">1,247</div>
+                    <div class="text-sm text-blue-800 mt-2">Total Issues</div>
+                </div>
+                <div class="bg-red-100 rounded-lg p-6 text-center">
+                    <div class="text-4xl font-bold text-red-600">23</div>
+                    <div class="text-sm text-red-800 mt-2">Critical Findings This Week</div>
+                </div>
+                <div class="bg-green-100 rounded-lg p-6 text-center">
+                    <div class="text-4xl font-bold text-green-600">87%</div>
+                    <div class="text-sm text-green-800 mt-2">Average Compliance Score</div>
+                </div>
+            </div>
+            
+            <!-- Vulnerabilities Chart -->
+            <div class="border-2 border-blue-200 rounded-lg p-6 mb-8">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-bold">Vulnerabilities By Severity</h3>
+                    <a href="#" class="text-blue-500 text-sm hover:underline">View Details ↗</a>
+                </div>
+                <div class="flex justify-center mb-6">
+                    <svg width="300" height="300" viewBox="0 0 300 300" class="transform -rotate-90">
+                        <circle cx="150" cy="150" r="100" fill="none" stroke="#ef4444" stroke-width="50" 
+                                stroke-dasharray="251 628" stroke-dashoffset="0"/>
+                        <circle cx="150" cy="150" r="100" fill="none" stroke="#f97316" stroke-width="50" 
+                                stroke-dasharray="157 628" stroke-dashoffset="-251"/>
+                        <circle cx="150" cy="150" r="100" fill="none" stroke="#eab308" stroke-width="50" 
+                                stroke-dasharray="126 628" stroke-dashoffset="-408"/>
+                        <circle cx="150" cy="150" r="100" fill="none" stroke="#3b82f6" stroke-width="50" 
+                                stroke-dasharray="94 628" stroke-dashoffset="-534"/>
+                    </svg>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div class="flex items-center gap-2">
+                        <div class="w-4 h-4 bg-red-500 rounded-full"></div><span class="text-sm">Critical</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-4 h-4 bg-orange-500 rounded-full"></div><span class="text-sm">High</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-4 h-4 bg-yellow-500 rounded-full"></div><span class="text-sm">Medium</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-4 h-4 bg-blue-500 rounded-full"></div><span class="text-sm">Low</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recent Scans Table -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Recent Scans</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-blue-900 text-white">
+                                <th class="px-4 py-3 text-left rounded-tl-lg">Scan Name</th>
+                                <th class="px-4 py-3 text-left">Target URL</th>
+                                <th class="px-4 py-3 text-left">Status</th>
+                                <th class="px-4 py-3 text-left rounded-tr-lg">Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-4 py-3">Production API Gateway</td>
+                                <td class="px-4 py-3 text-gray-600">api.example.com</td>
+                                <td class="px-4 py-3">
+                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs">● completed</span>
+                                </td>
+                                <td class="px-4 py-3">92%</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-4 py-3">E-Commerce Frontend</td>
+                                <td class="px-4 py-3 text-gray-600">shop.example.com</td>
+                                <td class="px-4 py-3">
+                                    <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs">● pending</span>
+                                </td>
+                                <td class="px-4 py-3">67%</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3">Data API Service</td>
+                                <td class="px-4 py-3 text-gray-600">data.example.com</td>
+                                <td class="px-4 py-3">
+                                    <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">● running</span>
+                                </td>
+                                <td class="px-4 py-3">--</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Script để load header2 và footer -->
+    <script>
+        fetch("header2.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+</body>
+</html>

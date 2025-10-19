@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Results Summary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            overflow-y: scroll; /* ✅ Luôn hiển thị thanh cuộn dọc */
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <div class="max-w-6xl mx-auto p-6">
+
+        <!-- Header -->
+        <h1 class="text-2xl font-bold text-gray-800 mb-6">Scan Results Summary</h1>
+
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <!-- Compliance Score -->
+            <div class="bg-blue-100 rounded-lg p-6 text-center">
+                <div class="text-5xl font-bold text-blue-600">87%</div>
+                <div class="text-sm text-blue-800 mt-2">Compliance Score</div>
+            </div>
+
+            <!-- Critical Findings -->
+            <div class="bg-red-100 rounded-lg p-6 text-center">
+                <div class="text-5xl font-bold text-red-600">12</div>
+                <div class="text-sm text-red-800 mt-2">Critical Findings</div>
+            </div>
+
+            <!-- Warnings -->
+            <div class="bg-green-100 rounded-lg p-6 text-center">
+                <div class="text-5xl font-bold text-green-600">30</div>
+                <div class="text-sm text-green-800 mt-2">Warnings</div>
+            </div>
+        </div>
+
+        <!-- Vulnerabilities Chart -->
+        <div class="border-2 border-cyan-300 rounded-2xl p-6 mb-8 bg-white">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-bold text-gray-800">Vulnerabilities By Severity</h2>
+                <a href="#" class="text-blue-500 text-sm hover:underline flex items-center gap-1">
+                    View Details
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Donut Chart -->
+            <div class="flex justify-center mb-6">
+                <svg width="300" height="300" viewBox="0 0 300 300" class="transform -rotate-90">
+                    <!-- Critical -->
+                    <circle cx="150" cy="150" r="100" fill="none" stroke="#ef4444" stroke-width="50" 
+                            stroke-dasharray="188 628" stroke-dashoffset="0"/>
+                    <!-- High -->
+                    <circle cx="150" cy="150" r="100" fill="none" stroke="#eab308" stroke-width="50" 
+                            stroke-dasharray="251 628" stroke-dashoffset="-188"/>
+                    <!-- Medium -->
+                    <circle cx="150" cy="150" r="100" fill="none" stroke="#f97316" stroke-width="50" 
+                            stroke-dasharray="126 628" stroke-dashoffset="-439"/>
+                    <!-- Low -->
+                    <circle cx="150" cy="150" r="100" fill="none" stroke="#3b82f6" stroke-width="50" 
+                            stroke-dasharray="63 628" stroke-dashoffset="-565"/>
+                </svg>
+            </div>
+
+            <!-- Legend -->
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="flex items-center gap-2">
+                    <div class="w-4 h-4 bg-red-500 rounded-full"></div>
+                    <span class="text-sm text-gray-700">Critical</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-4 h-4 bg-yellow-500 rounded-full"></div>
+                    <span class="text-sm text-gray-700">High</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-4 h-4 bg-orange-500 rounded-full"></div>
+                    <span class="text-sm text-gray-700">Medium</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+                    <span class="text-sm text-gray-700">Low</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Findings Section -->
+        <div class="bg-white rounded-lg shadow-sm p-6">
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+                <h2 class="text-xl font-bold text-gray-800">Findings</h2>
+                <div class="flex flex-wrap items-center gap-3">
+                    <select class="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500">
+                        <option>All severities</option>
+                        <option>Critical</option>
+                        <option>High</option>
+                        <option>Medium</option>
+                        <option>Low</option>
+                    </select>
+                    <select class="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500">
+                        <option>All standards</option>
+                        <option>OWASP</option>
+                        <option>PCI DSS</option>
+                        <option>ISO 27001</option>
+                    </select>
+                    <button class="bg-blue-900 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-800 transition">
+                        Export PDF
+                    </button>
+                    <button class="bg-blue-900 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-800 transition">
+                        Export CSV
+                    </button>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead>
+                        <tr class="bg-blue-600 text-white">
+                            <th class="px-4 py-3 text-left text-sm font-semibold">ID</th>
+                            <th class="px-4 py-3 text-left text-sm font-semibold">Severity</th>
+                            <th class="px-4 py-3 text-left text-sm font-semibold">Title</th>
+                            <th class="px-4 py-3 text-left text-sm font-semibold">Standard</th>
+                            <th class="px-4 py-3 text-left text-sm font-semibold">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-700">F-001</td>
+                            <td class="px-4 py-3">
+                                <span class="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-semibold">Critical</span>
+                            </td>
+                            <td class="px-4 py-3 text-sm text-gray-700">Missing HSTS Header</td>
+                            <td class="px-4 py-3 text-sm text-gray-700">OWASP A05</td>
+                            <td class="px-4 py-3">
+                                <a href="#" class="text-blue-500 text-sm hover:underline">View ↗</a>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-700">F-002</td>
+                            <td class="px-4 py-3">
+                                <span class="inline-block bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-semibold">Medium</span>
+                            </td>
+                            <td class="px-4 py-3 text-sm text-gray-700">Weak Apache Version</td>
+                            <td class="px-4 py-3 text-sm text-gray-700">CIS Apache</td>
+                            <td class="px-4 py-3">
+                                <a href="#" class="text-blue-500 text-sm hover:underline">View ↗</a>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm text-gray-700">F-003</td>
+                            <td class="px-4 py-3">
+                                <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold">High</span>
+                            </td>
+                            <td class="px-4 py-3 text-sm text-gray-700">SQL Injection Vulnerability</td>
+                            <td class="px-4 py-3 text-sm text-gray-700">OWASP A03</td>
+                            <td class="px-4 py-3">
+                                <a href="#" class="text-blue-500 text-sm hover:underline">View ↗</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="mt-8"></div>
+
+    <script>
+        // Gọi header và footer tự động
+        async function loadHTML(id, file) {
+            const response = await fetch(file);
+            const html = await response.text();
+            document.getElementById(id).innerHTML = html;
+        }
+
+        loadHTML('header', 'header2.html');
+        loadHTML('footer', 'footer.html');
+
+        // Filter & export
+        const selects = document.querySelectorAll('select');
+        const tableRows = document.querySelectorAll('tbody tr');
+
+        function filterTable() {
+            const severity = selects[0].value;
+            const standard = selects[1].value;
+            tableRows.forEach(row => {
+                const sev = row.children[1].innerText.trim();
+                const std = row.children[3].innerText.trim();
+                row.style.display =
+                    (severity === 'All severities' || sev.includes(severity)) &&
+                    (standard === 'All standards' || std.includes(standard))
+                    ? '' : 'none';
+            });
+        }
+
+        selects.forEach(s => s.addEventListener('change', filterTable));
+
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (btn.textContent.includes('PDF')) alert('Exporting to PDF...');
+                if (btn.textContent.includes('CSV')) alert('Exporting to CSV...');
+            });
+        });
+    </script>
+</body>
+</html>

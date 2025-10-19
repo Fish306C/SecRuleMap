@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header - Security Audit Scanning Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-400 shadow-md">
+        <div class="flex items-center justify-between px-8 py-3">
+            
+            <!-- Logo Section -->
+            <div class="flex flex-col items-start space-y-1 ml-8">
+                <img src="./logo.png" 
+                     alt="SAQT Logo" 
+                     class="h-11 w-auto" />
+                <p class="text-[8px] text-white font-semibold tracking-widest leading-none ml-[-7px]">
+                    SECURITY AUDIT SCANNING TOOL
+                </p>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="flex items-center gap-10 text-white font-medium text-base">
+                <a href="/home.html" class="hover:text-blue-100 transition">Home</a>
+                <a href="/dashboard.html" class="hover:text-blue-100 transition">Dashboard</a>
+                <a href="/new_scan.html" class="hover:text-blue-100 transition">New Scan</a>
+                <a href="/scan_history.html" class="hover:text-blue-100 transition">Reports</a>
+                <a href="/about.html" class="hover:text-blue-100 transition">About</a>
+                <a href="/policy.html" class="hover:text-blue-100 transition">Privacy Policy</a>
+            </nav>
+
+            <!-- Right Section -->
+            <div class="flex items-center gap-4">
+                <!-- User Icon (Profile Link) -->
+                <a href="/user_profile.html" class="bg-white bg-opacity-20 hover:bg-opacity-30 p-2.5 rounded-full transition">
+                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 
+                                 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 
+                                 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                </a>
+
+                <!-- Sign Out Button -->
+                <button class="bg-cyan-400 hover:bg-cyan-500 text-white font-medium px-8 py-2.5 rounded-full transition border-2 border-cyan-300">
+                    Sign out
+                </button>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

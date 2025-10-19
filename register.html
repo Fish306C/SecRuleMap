@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create An Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: radial-gradient(ellipse at center, #0a2463 0%, #001233 50%, #000511 100%);
+            position: relative;
+            overflow-y: auto; /*  Cho phép cuộn dọc */
+            min-height: 100vh;
+        }
+        
+        /* Diagonal light lines */
+        .diagonal-line {
+            position: absolute;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0, 150, 255, 0.6), transparent);
+            transform-origin: left center;
+        }
+        
+        .diagonal-line-1 { top: 15%; left: 0; width: 800px; transform: rotate(-20deg); animation: glow1 3s ease-in-out infinite; }
+        .diagonal-line-2 { top: 10%; right: 0; width: 600px; transform: rotate(25deg); animation: glow2 4s ease-in-out infinite; }
+        .diagonal-line-3 { bottom: 20%; left: 0; width: 700px; transform: rotate(15deg); animation: glow1 3.5s ease-in-out infinite; }
+        .diagonal-line-4 { bottom: 10%; right: -200px; width: 900px; transform: rotate(-30deg); animation: glow2 4.5s ease-in-out infinite; }
+        
+        @keyframes glow1 {
+            0%, 100% { opacity: 0.3; box-shadow: 0 0 10px rgba(0, 150, 255, 0.3); }
+            50% { opacity: 0.8; box-shadow: 0 0 20px rgba(0, 150, 255, 0.8); }
+        }
+        @keyframes glow2 {
+            0%, 100% { opacity: 0.4; box-shadow: 0 0 15px rgba(0, 150, 255, 0.4); }
+            50% { opacity: 0.9; box-shadow: 0 0 25px rgba(0, 150, 255, 0.9); }
+        }
+
+        /* Vertical beams */
+        .vertical-beam {
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, rgba(0, 150, 255, 0.4), transparent);
+            animation: beam-pulse 5s ease-in-out infinite;
+        }
+        .vertical-beam-1 { left: 10%; animation-delay: 0s; }
+        .vertical-beam-2 { left: 25%; animation-delay: 1s; }
+        .vertical-beam-3 { right: 15%; animation-delay: 2s; }
+        .vertical-beam-4 { right: 5%; animation-delay: 1.5s; }
+
+        @keyframes beam-pulse {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 0.6; }
+        }
+
+        /* Circuit pattern */
+        .circuit-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(90deg, rgba(0, 100, 200, 0.05) 1px, transparent 1px),
+                linear-gradient(rgba(0, 100, 200, 0.05) 1px, transparent 1px);
+            background-size: 60px 60px;
+            opacity: 0.3;
+        }
+
+        /* Glowing dots */
+        .glow-dot {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(100, 200, 255, 0.8);
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(100, 200, 255, 0.8);
+            animation: dot-glow 2s ease-in-out infinite;
+        }
+        @keyframes dot-glow {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.5); }
+        }
+
+        /* Form shadow */
+        .form-container {
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 50px rgba(0, 100, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!--  Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Background Effects -->
+    <div class="circuit-pattern"></div>
+    <div class="diagonal-line diagonal-line-1"></div>
+    <div class="diagonal-line diagonal-line-2"></div>
+    <div class="diagonal-line diagonal-line-3"></div>
+    <div class="diagonal-line diagonal-line-4"></div>
+    <div class="vertical-beam vertical-beam-1"></div>
+    <div class="vertical-beam vertical-beam-2"></div>
+    <div class="vertical-beam vertical-beam-3"></div>
+    <div class="vertical-beam vertical-beam-4"></div>
+
+    <!-- Registration Form -->
+    <main class="flex-grow flex items-center justify-center p-6">
+        <div class="relative z-10 bg-white rounded-2xl form-container p-10 w-full max-w-md">
+            
+            <!-- User Icon -->
+            <div class="flex justify-center mb-5">
+                <div class="bg-gradient-to-br from-blue-500 to-blue-700 rounded-full w-20 h-20 flex items-center justify-center shadow-lg">
+                    <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Title -->
+            <div class="text-center mb-6">
+                <h1 class="text-xl font-bold text-gray-900 mb-1">Create An Account</h1>
+                <p class="text-xs text-gray-500">Register to get started</p>
+            </div>
+
+            <!-- Form -->
+            <form class="space-y-3">
+                <input type="text" placeholder="Full Name (optional)" class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500">
+                <input type="email" placeholder="Email *" required class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500">
+                <input type="tel" placeholder="Phone Number *" required class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500">
+                <input type="password" placeholder="Password *" required class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500">
+                <p class="text-[11px] text-gray-600 text-center leading-tight px-2">
+                    Password must be at least 8 characters, include uppercase,<br>lowercase, number, and symbol.
+                </p>
+                <input type="password" placeholder="Confirm Password *" required class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500">
+
+                <div class="flex items-start gap-2 pt-1">
+                    <input type="checkbox" id="terms" required class="mt-0.5 w-4 h-4 text-blue-600 border-gray-400 rounded focus:ring-blue-500 cursor-pointer">
+                    <label for="terms" class="text-xs text-gray-700 leading-tight cursor-pointer">
+                        I agree to the <a href="#" class="text-blue-600 hover:underline font-medium">Terms of Service</a> and 
+                        <a href="#" class="text-blue-600 hover:underline font-medium">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded-full transition shadow-md hover:shadow-lg mt-4 text-sm">
+                    Register
+                </button>
+            </form>
+
+            <!--  Added login link -->
+            <p class="text-center text-sm text-gray-600 mt-5">
+                Already have an account? 
+                <a href="login.html" class="text-blue-600 font-semibold hover:underline">
+                    Log in here
+                </a>
+            </p>
+        </div>
+    </main>
+
+    <!--  Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load header & footer -->
+    <script>
+        fetch("header1.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("header-placeholder").innerHTML = data);
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+    </script>
+
+</body>
+</html>
